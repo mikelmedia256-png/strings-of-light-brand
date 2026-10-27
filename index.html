@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Brand book for Strings of Light, Claire Gaxiola, violinist.">
+<meta property="og:title" content="Strings of Light Brand Book">
+<meta property="og:description" content="The brand kit for Claire Gaxiola, violinist: logo, colour, type, photography and every file.">
+<meta property="og:image" content="https://mikelmedia256-png.github.io/strings-of-light-brand/SOL_Link-Preview_1200x630.png">
+<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Strings of Light Brand Book</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&display=swap">
+<style>
+/* Layout: a concert programme lit like the mood board. Movements alternate night and dawn; the sky gradient appears only where light enters (the arch, the cover, a few hero moments). One committed look, so a single theme. */
+:root{
+  --night:#17133F; --night-2:#221C55; --tempest:#1C2B36;
+  --dawn:#F8EEDB; --paper:#FCF6EA; --cloud:#E6E0EC;
+  --halo:#F2B24A; --ember:#E07A3A; --vesper:#6A4FB0; --vesper-dk:#54398F; --ember-dk:#A8501F;
+  --ink:#17133F; --muted:#5E5873; --muted-dk:#B9B2CF;
+  --rule:rgba(23,19,63,.15); --rule-dk:rgba(248,238,219,.16);
+  --sky:linear-gradient(180deg,#1E1852 0%,#6A4FB0 34%,#E07A3A 60%,#F2B24A 80%,#FBE6B4 100%);
+  --serif:'EB Garamond','Garamond','Iowan Old Style',Georgia,serif;
+  --script:'Pinyon Script','Snell Roundhand',cursive;
+  --wrap:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--dawn);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:oldstyle-nums}
+img{max-width:100%;display:block}
+h1,h2,h3{font-weight:400;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--halo);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(72px,10vw,140px)}
+.dark{background:var(--night);color:var(--dawn)}
+.cloud{background:var(--cloud)}
+.label{font-size:14px;text-transform:uppercase;letter-spacing:.28em;color:var(--vesper-dk)}
+.dark .label{color:var(--halo)}
+.muted{color:var(--muted)} .dark .muted{color:var(--muted-dk)}
+svg.u{display:block;fill:currentColor}
+
+.mvt{display:grid;grid-template-columns:auto 1fr;gap:6px 28px;align-items:baseline;margin-bottom:clamp(40px,6vw,72px);border-top:1px solid var(--rule);padding-top:22px}
+.dark .mvt{border-color:var(--rule-dk)}
+.mvt .no{font-size:15px;letter-spacing:.24em;color:var(--vesper-dk)}
+.dark .mvt .no{color:var(--halo)}
+.mvt h2{font-size:clamp(40px,6vw,76px);line-height:1;font-style:italic;grid-column:2}
+.mvt .tempo{grid-column:2;font-size:17px;color:var(--muted)}
+.dark .mvt .tempo{color:var(--muted-dk)}
+
+/* cover */
+.cover{display:grid;grid-template-columns:1.05fr 1fr;min-height:min(880px,96vh);background:var(--night);color:var(--dawn)}
+.cover__l{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px,4vw,56px) max(24px,env(safe-area-inset-left,0px)) clamp(28px,4vw,56px) clamp(24px,5vw,72px)}
+.cover__top,.cover__foot{display:flex;justify-content:space-between;gap:16px;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted-dk)}
+.cover__mark{display:flex;flex-direction:column;align-items:center;gap:26px;padding-block:40px}
+.cover__mark .e{width:clamp(130px,15vw,190px)}
+.cover__mark .w{width:min(500px,100%);color:var(--dawn)}
+.cover__mark .sub{font-size:14px;letter-spacing:.42em;color:var(--halo);text-transform:uppercase;text-align:center}
+.cover__r{position:relative;overflow:hidden;min-height:420px}
+.cover__r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.cover__r::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 0%,rgba(23,19,63,0) 30%),linear-gradient(0deg,rgba(23,19,63,.35),rgba(23,19,63,0) 40%)}
+
+.toc{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--rule)}
+.toc a{display:block;padding:18px 16px 20px 0;text-decoration:none;border-bottom:1px solid var(--rule)}
+.toc a span{display:block;font-size:13px;letter-spacing:.24em;color:var(--vesper-dk)}
+.toc a b{font-weight:400;font-style:italic;font-size:24px}
+.toc a:hover b{color:var(--vesper-dk)}
+
+.cols{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px}
+.c-4{grid-column:span 4} .c-5{grid-column:span 5} .c-6{grid-column:span 6} .c-7{grid-column:span 7} .c-8{grid-column:span 8} .c-12{grid-column:span 12}
+.prose{max-width:62ch}
+.prose p+p{margin-top:1em}
+.lede{font-size:clamp(30px,4.2vw,54px);line-height:1.16;font-style:italic;max-width:21ch}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:clamp(48px,7vw,80px)}
+.trio h3{font-size:30px;font-style:italic;margin:16px 0 6px}
+.trio p{font-size:17px;color:var(--muted)}
+.trio .chip{height:150px;border-radius:2px;overflow:hidden;position:relative}
+.tag{margin-top:clamp(56px,8vw,96px);display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.tag .big{font-family:var(--script);font-size:clamp(64px,10vw,132px);line-height:1}
+.tag .small{font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--vesper-dk)}
+
+.aud{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule-dk)}
+.aud>div{padding:26px 24px 28px;border-right:1px solid var(--rule-dk)}
+.aud>div:first-child{padding-left:0}
+.aud>div:last-child{border-right:0}
+.aud h3{font-size:30px;font-style:italic;margin-bottom:10px}
+.aud p{font-size:17px;color:var(--muted-dk)}
+.stmt{margin-top:clamp(56px,8vw,96px);font-size:clamp(24px,2.8vw,34px);line-height:1.35;max-width:36ch}
+.stmt em{color:var(--halo)}
+.traits{margin-top:clamp(56px,8vw,96px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.traits h3{font-size:34px;font-style:italic}
+.traits .not{font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--halo);margin-top:4px}
+.traits p.d{font-size:17px;color:var(--muted-dk);margin-top:10px}
+
+.plate{display:grid;place-items:center;border-radius:2px;position:relative}
+.plate .cap{position:absolute;left:20px;bottom:16px;font-size:13px;letter-spacing:.24em;text-transform:uppercase}
+.p-dawn{background:var(--paper);color:var(--ink)} .p-dawn .cap{color:var(--muted)}
+.p-night{background:var(--night);color:var(--dawn);--sil:var(--night)} .p-night .cap{color:var(--muted-dk)}
+.p-tempest{background:var(--tempest);color:var(--dawn);--sil:var(--tempest)} .p-tempest .cap{color:#A9BBC6}
+.p-cloud{background:var(--cloud);color:var(--ink)} .p-cloud .cap{color:var(--muted)}
+.p-halo{background:var(--halo);color:var(--night)} .p-halo .cap{color:var(--night)}
+.lock{display:flex;flex-direction:column;align-items:center;gap:clamp(14px,2.2vw,26px);padding:clamp(56px,8vw,100px) 24px;width:100%}
+.lock .s{letter-spacing:.42em;text-transform:uppercase;color:var(--vesper-dk);text-align:center}
+.p-night .lock .s,.p-tempest .lock .s{color:var(--halo)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.note{margin-top:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;font-size:17px}
+.note b{display:block;font-weight:400;font-style:italic;font-size:22px;margin-bottom:4px}
+.anat{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;font-size:17px}
+.anat span{display:block;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--vesper-dk);margin-bottom:4px}
+.misuse{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.misuse figure{margin:0}
+.misuse .plate{height:190px;overflow:hidden}
+.misuse figcaption{font-size:16px;margin-top:10px}
+.misuse figcaption::before{content:"Never: ";color:var(--vesper-dk);font-style:italic}
+
+/* colour */
+.sw{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.sw figure{margin:0;display:flex;flex-direction:column;border-radius:2px;overflow:hidden;background:var(--paper)}
+.sw .src{aspect-ratio:3/4;position:relative}
+.sw .src img{width:100%;height:100%;object-fit:cover}
+.sw .chip{height:120px;padding:14px;display:flex;align-items:flex-end}
+.sw .chip b{font-weight:400;font-style:italic;font-size:26px;line-height:1}
+.sw figcaption{padding:14px 14px 16px;font-size:14px;line-height:1.5}
+.sw figcaption p.w{font-size:15px;color:var(--muted);margin-bottom:8px}
+.sw dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:1px 10px;font-variant-numeric:lining-nums tabular-nums;letter-spacing:.04em}
+.sw dt{color:var(--muted)} .sw dd{margin:0}
+.mbnote{margin-top:12px;font-size:14px;color:var(--muted)}
+.skyband{margin-top:56px;border-radius:2px;overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr}
+.skyband .g{background:var(--sky);min-height:300px}
+.skyband .t{background:var(--paper);padding:clamp(24px,4vw,44px)}
+.skyband h3{font-size:34px;font-style:italic;margin-bottom:10px}
+.skyband ul{margin:14px 0 0;padding-left:1.1em;font-size:17px}
+.pairs{margin-top:20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pairs div{padding:22px 18px;border-radius:2px;font-size:17px}
+.pairs b{display:block;font-weight:400;font-style:italic;font-size:26px;line-height:1.1;margin-bottom:4px}
+.ratio{margin-top:22px;display:flex;height:14px;border-radius:2px;overflow:hidden}
+
+.spec{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;align-items:end;border-bottom:1px solid var(--rule);padding-block:34px}
+.spec .meta{grid-column:span 3;font-size:15px;color:var(--muted)}
+.spec .meta b{display:block;font-weight:400;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--vesper-dk);margin-bottom:6px}
+.spec .show{grid-column:span 9;min-width:0}
+.hier{margin-top:56px;padding:clamp(28px,5vw,64px);background:var(--paper);border-radius:2px}
+.hier .h-label{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--vesper-dk)}
+.hier .h-head{font-size:clamp(34px,4.6vw,58px);line-height:1.08;margin-top:12px;font-style:italic}
+.hier .h-lede{font-size:24px;font-style:italic;color:var(--muted);margin-top:14px;max-width:34ch}
+.hier .h-body{font-size:19px;margin-top:18px;max-width:58ch}
+
+.ph{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(110px,13vw,170px);gap:12px}
+.ph figure{margin:0;position:relative;overflow:hidden;border-radius:2px;background:var(--night-2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:14px;bottom:12px;right:14px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--dawn);text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.rules{margin-top:48px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.rules h3{font-size:26px;font-style:italic;margin-bottom:6px}
+.rules p{font-size:17px;color:var(--muted-dk)}
+
+.say{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--rule)}
+.say>div{padding:24px 28px 26px 0;border-bottom:1px solid var(--rule)}
+.say>div:nth-child(even){padding-left:28px;border-left:1px solid var(--rule)}
+.say .k{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--vesper-dk);margin-bottom:8px}
+.say .k.no{color:var(--muted)}
+.say p.q{font-size:22px;line-height:1.4}
+.say p.q.no{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(84,57,143,.5);text-decoration-thickness:1px}
+.lexicon{margin-top:48px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.lexicon ul{margin:10px 0 0;padding:0;list-style:none;font-size:20px;line-height:1.8}
+
+/* applications */
+.stage-set{background:var(--cloud);border-radius:2px;padding:clamp(28px,5vw,64px);display:grid;place-items:center;position:relative;overflow:hidden}
+.cards{position:relative;width:min(640px,100%);aspect-ratio:640/420}
+.card{position:absolute;width:62%;aspect-ratio:3.5/2;border-radius:3px;box-shadow:0 1px 1px rgba(23,19,63,.12),0 18px 40px -12px rgba(23,19,63,.5)}
+.card--f{left:2%;top:8%;background:var(--night);transform:rotate(-6deg);display:grid;place-items:center;--sil:var(--night)}
+.card--f svg{width:20%}
+.card--b{right:2%;bottom:6%;background:var(--paper);transform:rotate(4deg);padding:7% 8%;display:flex;flex-direction:column;justify-content:space-between}
+.card--b .w{width:62%;color:var(--ink)}
+.card--b .ct{font-size:clamp(9px,1.4vw,12.5px);line-height:1.55;letter-spacing:.06em;display:flex;justify-content:space-between;gap:10px;align-items:end;font-variant-numeric:lining-nums}
+.card--b .ct .r{text-align:right}
+.env{position:relative;width:min(560px,100%);aspect-ratio:560/360;background:#F3E8D3;border-radius:3px;box-shadow:0 18px 40px -14px rgba(23,19,63,.45)}
+.env::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent 49.6%,rgba(23,19,63,.07) 50%,transparent 50.6%),linear-gradient(to bottom left,transparent 49.6%,rgba(23,19,63,.07) 50%,transparent 50.6%)}
+.env .flap{position:absolute;left:0;right:0;top:0;height:58%;background:#EEE1C9;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 2px 2px rgba(23,19,63,.15))}
+.env .sticker{position:absolute;left:50%;top:56%;width:15%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:var(--night);display:grid;place-items:center;box-shadow:0 3px 6px rgba(23,19,63,.35);--sil:var(--night)}
+.env .sticker svg{width:52%;margin-top:14%}
+.env .to{position:absolute;left:0;right:0;bottom:7%;text-align:center;font-family:var(--script);font-size:clamp(22px,3.6vw,34px);color:var(--ink)}
+.prog{width:min(380px,100%);aspect-ratio:5/7;background:var(--paper);box-shadow:0 18px 40px -14px rgba(0,0,0,.5);padding:9% 10%;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4%;border-radius:2px}
+.prog .e{width:15%}
+.prog .t{font-size:clamp(11px,1.5vw,13px);letter-spacing:.32em;text-transform:uppercase;color:var(--vesper-dk)}
+.prog .n{font-family:var(--script);font-size:clamp(28px,4.4vw,40px);line-height:1}
+.prog ul{list-style:none;margin:2% 0 0;padding:0;width:100%;font-size:clamp(11px,1.5vw,14px);line-height:1.45}
+.prog li{padding:4% 0;border-top:1px solid var(--rule)}
+.prog li i{display:block;font-size:.8em;letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:var(--vesper-dk)}
+.prog .w{width:46%;margin-top:auto;color:var(--ink)}
+.ig{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;width:100%}
+.ig>div{aspect-ratio:4/5;overflow:hidden;position:relative;display:grid;place-items:center;text-align:center}
+.ig img{width:100%;height:100%;object-fit:cover}
+.ig .t1{background:var(--sky);color:var(--dawn);font-family:var(--script);font-size:21px;line-height:1;padding:8%;align-content:end;padding-bottom:16%}
+.ig .t2{background:var(--paper);color:var(--ink);padding:9%;font-style:italic;font-size:8.5px;line-height:1.4}
+.ig .t2 small{display:block;margin-top:5px;font-style:normal;font-size:6px;letter-spacing:.24em;color:var(--vesper-dk)}
+.ig .t3{background:var(--night);color:var(--dawn);padding:10%}
+.ig .t3 b{display:block;font-weight:400;font-size:11.5px;line-height:1.2}
+.ig .t3 small{display:block;margin-bottom:4px;font-size:5.5px;letter-spacing:.26em;color:var(--halo)}
+.ig .t4{background:var(--night);--sil:var(--night)}
+.ig .t4 svg{width:40%;margin-top:18%}
+.phone{width:min(330px,100%);background:#0E0C1F;border-radius:38px;padding:12px;box-shadow:0 30px 60px -20px rgba(23,19,63,.6)}
+.phone .scr{background:#fff;border-radius:28px;overflow:hidden;color:#111;font-family:-apple-system,system-ui,sans-serif}
+.phone .hd{display:flex;gap:14px;align-items:center;padding:16px 14px 10px}
+.phone .av{width:66px;height:66px;border-radius:50%;background:var(--night);display:grid;place-items:center;flex:none;overflow:hidden;--sil:var(--night)}
+.phone .av svg{width:56%;margin-top:28%}
+.phone .nm{font-size:12.5px;line-height:1.35}
+.phone .nm b{display:block;font-size:14px}
+.web{width:100%;background:var(--paper);border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(23,19,63,.5)}
+.web .bar{display:flex;gap:6px;align-items:center;padding:10px 14px;background:#E4DCEA}
+.web .bar i{width:10px;height:10px;border-radius:50%;background:#C9BFD6}
+.web .bar span{margin-left:12px;font-family:system-ui,sans-serif;font-size:12px;color:#6a6280;background:var(--paper);padding:3px 12px;border-radius:999px}
+.web .pg{display:grid;grid-template-columns:1fr 1fr;min-height:clamp(320px,40vw,520px);background:var(--night);color:var(--dawn)}
+.web .l{padding:clamp(18px,3vw,36px);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.web .l::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,rgba(106,79,176,0),rgba(106,79,176,.35) 40%,rgba(224,122,58,.45) 75%,rgba(242,178,74,.55));pointer-events:none}
+.web nav{display:flex;justify-content:space-between;align-items:center;gap:10px;position:relative}
+.web nav .w{width:clamp(110px,14vw,170px);color:var(--dawn)}
+.web nav span{white-space:nowrap;font-size:clamp(9px,1vw,12px);letter-spacing:.24em;text-transform:uppercase;color:var(--muted-dk)}
+.web .hx{margin:auto 0;padding-block:24px;position:relative}
+.web .hx p.e{font-size:clamp(9px,1vw,12px);letter-spacing:.3em;text-transform:uppercase;color:var(--halo)}
+.web .hx h3{font-size:clamp(28px,4.4vw,60px);font-style:italic;line-height:1.02;margin-top:10px}
+.web .hx p.s{font-size:clamp(12px,1.3vw,17px);color:var(--muted-dk);margin-top:12px;max-width:30ch}
+.web .hx .btn{display:inline-block;margin-top:20px;background:var(--halo);color:var(--night);font-size:clamp(9px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;padding:12px 20px;border-radius:999px}
+.web .r{position:relative}
+.web .r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.sig{background:#fff;border-radius:4px;padding:28px 30px;box-shadow:0 12px 30px -16px rgba(23,19,63,.35);width:min(560px,100%)}
+.sig .hi{font-size:17px;color:#333}
+.sig .blk{margin-top:22px;padding-top:18px;border-top:1px solid #e6e0ec;display:flex;gap:16px;align-items:center}
+.sig .blk .m{width:42px;flex:none}
+.sig .blk p{font-size:14px;line-height:1.5;color:#3a3550;font-variant-numeric:lining-nums}
+.sig .blk p b{font-weight:500;font-size:16px;color:var(--ink)}
+.apps{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
+.apps .a{display:flex;flex-direction:column;gap:14px;min-width:0}
+.apps .a>p{font-size:16px;color:var(--muted)}
+.apps .a>p b{font-weight:400;font-style:italic;color:var(--ink);font-size:20px;margin-right:6px}
+
+.files{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-dk)}
+.files div{padding:22px 24px 24px 0;border-bottom:1px solid var(--rule-dk);font-size:17px;color:var(--muted-dk)}
+.files b{display:block;font-weight:400;font-style:italic;font-size:22px;color:var(--dawn)}
+.colophon{margin-top:72px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:end}
+.colophon .w{width:min(340px,80vw);color:var(--dawn)}
+.colophon p{font-size:15px;color:var(--muted-dk);font-variant-numeric:lining-nums}
+
+.kitrow{display:grid;gap:10px;margin-bottom:10px}
+.kitposts{grid-template-columns:repeat(6,minmax(0,1fr))}
+.kitposts img,.kitstories img{width:100%;border-radius:2px}
+.kithl{grid-template-columns:repeat(7,minmax(0,1fr));max-width:620px;margin-block:18px}
+.kithl img{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover}
+.kitstories{grid-template-columns:repeat(4,minmax(0,1fr));max-width:760px}
+.kitprint{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.kitprint figure{margin:0;background:var(--night-2);border-radius:2px;padding:16px;display:flex;flex-direction:column;gap:10px;justify-content:space-between}
+.kitprint img{width:100%;max-height:260px;object-fit:contain}
+.kitprint figcaption{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-dk)}
+.dls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px;border-top:1px solid var(--rule-dk)}
+.dl{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule-dk)}
+.dl--all b{color:var(--halo)}
+.dl b{font-weight:400;font-style:italic;font-size:21px}
+.dl p{font-size:15px;color:var(--muted-dk);margin-top:2px}
+.dl__f{display:flex;gap:14px;align-items:center;flex:none}
+.dl__f span{font-size:13px;color:var(--muted-dk);font-variant-numeric:lining-nums;white-space:nowrap}
+.dlb{display:inline-flex;align-items:center;text-decoration:none;font:600 12px/1 var(--serif);letter-spacing:.2em;text-transform:uppercase;background:var(--halo);color:var(--night);border:0;border-radius:999px;padding:12px 18px;min-height:44px;cursor:pointer}
+.dlb:disabled{opacity:.5;cursor:default}
+@media (max-width:980px){.kitposts{grid-template-columns:repeat(3,minmax(0,1fr))}.kitprint{grid-template-columns:repeat(2,minmax(0,1fr))}.dls{grid-template-columns:1fr}}
+@media (max-width:640px){.kitstories{grid-template-columns:repeat(2,minmax(0,1fr))}.kithl{grid-template-columns:repeat(4,minmax(0,1fr))}.dl{flex-direction:column;align-items:flex-start}}
+@media (max-width:980px){
+  .cover{grid-template-columns:1fr}
+  .cover__r{min-height:520px}
+  .cover__r::after{background:linear-gradient(0deg,var(--night) 0%,rgba(23,19,63,0) 30%)}
+  .toc{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .c-4,.c-5,.c-6,.c-7,.c-8{grid-column:span 12}
+  .aud,.traits,.rules{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .aud>div{border-right:0;padding-left:0}
+  .sw{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pairs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skyband{grid-template-columns:1fr}
+  .spec .meta,.spec .show{grid-column:span 12}
+  .apps .a{grid-column:span 12 !important}
+  .note,.anat,.files,.trio{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:18px}
+  .toc{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid2,.grid3,.misuse,.say,.lexicon{grid-template-columns:1fr}
+  .say>div:nth-child(even){padding-left:0;border-left:0}
+  .aud,.traits,.rules{grid-template-columns:1fr}
+  .sw{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ph{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .ph figure{grid-column:span 6 !important;grid-row:span 2 !important}
+  .web .pg{grid-template-columns:1fr}
+  .web .r{min-height:260px}
+  .mvt{grid-template-columns:1fr}
+  .mvt h2,.mvt .tempo{grid-column:1}
+}
+</style>
+
+</head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E1852"/><stop offset=".34" stop-color="#6A4FB0"/><stop offset=".6" stop-color="#E07A3A"/><stop offset=".8" stop-color="#F2B24A"/><stop offset="1" stop-color="#FBE6B4"/></linearGradient>
+<radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".95"/><stop offset=".4" stop-color="#F8C766" stop-opacity=".55"/><stop offset="1" stop-color="#F2B24A" stop-opacity="0"/></radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".5"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></linearGradient>
+<clipPath id="archclip"><path d="M40 1300 L40 500 A460 460 0 0 1 960 500 L960 1300 Z"/></clipPath></defs>
+<symbol id="sol-word" viewBox="-6 14 614 130"><path transform="translate(0.0 0)" d="M11.2 100.1L11.2 100.1Q5.9 100.1 2.9 98.1Q0 96.1 0 93.4L0 93.4Q0 91.2 1.5 90.3Q3.0 89.3 4.5 89.3L4.5 89.3Q5.3 89.3 6.1 89.8Q6.9 90.4 6.9 91.6L6.9 91.6Q6.9 92.5 6.1 93.2Q5.3 94.0 4.2 94.0L4.2 94.0Q2.7 94.0 1.9 93.5L1.9 93.5L1.9 93.8Q1.9 95.9 4.4 97.4Q6.8 98.9 10.4 98.9L10.4 98.9Q15.6 98.9 19.8 96.3Q24.0 93.7 27.6 89.4Q31.2 85.1 34.4 79.8Q37.6 74.6 40.7 69.3L40.7 69.3L41.7 67.7Q34.0 67.4 27.9 65.4Q21.8 63.4 18.4 59.9Q15.0 56.4 15.3 51.7L15.3 51.7Q15.6 47.4 18.5 43.7Q21.3 40.0 26.2 37.3Q31.0 34.6 37.0 33.1Q43.1 31.5 49.8 31.5L49.8 31.5Q53.4 31.5 56.1 32.2Q58.8 32.9 58.8 33.6L58.8 33.6Q58.8 33.8 58.3 33.8L58.3 33.8Q57.9 33.8 57.6 33.7Q57.3 33.6 56.9 33.6L56.9 33.6Q55.3 33.2 53.7 32.9Q52.1 32.7 49.8 32.7L49.8 32.7Q44.1 32.7 38.7 34.1Q33.2 35.6 28.7 38.2Q24.3 40.8 21.6 44.5Q18.9 48.1 18.6 52.6L18.6 52.6Q18.4 55.6 20.9 58.7Q23.4 61.8 28.8 64.0Q34.2 66.2 42.5 66.5L42.5 66.5Q54.2 48.1 63.9 39.8Q73.7 31.5 82.5 31.5L82.5 31.5Q85.4 31.5 87.1 33.1Q88.8 34.7 88.7 37.6L88.7 37.6Q88.5 41.4 85.4 46.0Q82.3 50.7 77.0 55.2Q71.6 59.7 64.7 63.0Q57.8 66.4 49.8 67.4L49.8 67.4Q45.7 73.8 41.4 79.7Q37.1 85.6 32.4 90.1Q27.7 94.7 22.5 97.4Q17.2 100.1 11.2 100.1ZM50.7 66.0L50.7 66.0Q57.8 64.8 64.1 61.6Q70.4 58.5 75.2 54.2Q80.1 50 83.0 45.5Q85.8 41.1 86.0 37.4L86.0 37.4Q86.3 34.8 85.0 33.7Q83.7 32.7 82.4 32.8L82.4 32.8Q76.4 33.0 69.6 40.1Q62.7 47.2 54.2 60.6L54.2 60.6Q53.3 62.0 52.4 63.3Q51.6 64.7 50.7 66.0Z"/><path transform="translate(0.0 0)" d="M64.2 100.1L64.2 100.1Q61.5 100.1 60.1 99.0Q58.8 97.9 58.8 96.2L58.8 96.2Q58.8 94.9 59.1 93.6Q59.5 92.3 60.6 90.3Q61.7 88.3 64.0 84.9Q66.3 81.5 70.2 76.0L70.2 76.0L82.8 58.3L79.0 58.3Q77.5 58.3 77.5 57.7L77.5 57.7Q77.5 56.9 79.3 56.9L79.3 56.9L83.8 56.9L92.8 44.2Q93.5 44.3 94.5 44.4Q95.6 44.4 97.5 44.4L97.5 44.4Q98.5 44.4 99.6 44.2L99.6 44.2L90.2 56.9L102.8 56.9Q104.2 56.9 104.2 57.6L104.2 57.6Q104.2 58.3 102.9 58.3L102.9 58.3L89.1 58.3L76.2 75.7Q71.6 81.8 68.9 85.8Q66.1 89.7 64.6 92.0Q63.2 94.3 62.7 95.5Q62.2 96.6 62.2 97.1L62.2 97.1Q62.2 98.6 64.6 98.7L64.6 98.7Q68.0 98.6 71.6 96.5Q75.2 94.3 78.5 91.1Q81.8 88.0 84.4 84.9Q87.1 81.9 88.5 80.1L88.5 80.1L89.6 81.0Q88.2 82.6 85.5 85.7Q82.7 88.9 79.2 92.2Q75.6 95.5 71.8 97.8Q67.9 100.1 64.2 100.1Z"/><path transform="translate(0.0 0)" d="M96.3 100.1L96.3 100.1Q93.6 100.1 91.9 98.7Q90.2 97.3 90.2 95.0L90.2 95.0Q90.2 91.1 95.9 85.6Q101.6 80.1 111.4 73.5L111.4 73.5Q106.4 72.7 102.8 71.9Q99.2 71.0 97.1 70.1L97.1 70.1Q96.1 72.0 94.2 74.9Q92.4 77.7 89.5 81.0L89.5 81.0Q87.6 83.3 86.6 84.2Q85.6 85.1 85.2 85.3Q84.9 85.5 84.8 85.6L84.8 85.6Q84.7 85.6 84.6 85.3Q84.6 84.9 84.7 84.7L84.7 84.7Q84.7 84.5 85.4 83.8Q86.1 83.1 88.5 80.1L88.5 80.1Q90.9 77.1 92.8 74.3Q94.7 71.5 95.8 69.4L95.8 69.4Q94.0 68.3 93.7 66.9L93.7 66.9Q93.3 64.6 94.6 62.7Q96.0 60.7 98.1 60.7L98.1 60.7Q100.6 60.7 100.6 63.0L100.6 63.0Q100.6 64.1 100.2 64.9Q99.8 65.7 99.3 66.4L99.3 66.4Q98.4 67.4 98.4 69.0L98.4 69.0Q98.4 69.5 100.1 70.0Q101.8 70.6 104.3 71.1Q106.7 71.6 109.1 72.0Q111.5 72.4 112.9 72.5L112.9 72.5Q113.8 72.5 114.0 72.8Q114.3 73.1 114.3 73.2L114.3 73.2Q114.3 73.7 112.8 74.8L112.8 74.8Q110.2 76.9 107.3 79.8Q104.5 82.7 102.1 85.8Q99.6 88.9 98.1 91.6Q96.6 94.3 96.6 96.1L96.6 96.1Q96.6 98.4 98.4 98.4L98.4 98.4Q100.8 98.4 103.7 96.8Q106.5 95.2 109.4 92.7Q112.3 90.3 114.9 87.7Q117.4 85.1 119.3 83.0Q121.1 80.9 121.9 80.1L121.9 80.1L122.9 81.0Q121.8 82.0 119.8 84.2Q117.8 86.4 115.2 89.1Q112.6 91.8 109.5 94.3Q106.4 96.8 103.0 98.4Q99.7 100.1 96.3 100.1Z"/><path transform="translate(0.0 0)" d="M144.0 57.2L144.0 57.2Q142.7 57.2 141.9 56.3Q141.1 55.5 141.1 54.2L141.1 54.2Q141.1 52.4 142.5 51.0Q143.9 49.6 146.0 49.6L146.0 49.6Q147.3 49.6 148.1 50.5Q148.9 51.4 148.9 52.6L148.9 52.6Q148.9 54.4 147.4 55.8Q145.9 57.2 144.0 57.2ZM119.1 100.1L119.1 100.1Q116.1 100.1 114.3 99.0Q112.5 97.9 112.5 96.0L112.5 96.0Q112.5 94.5 113.2 92.6Q113.9 90.7 116.0 87.6Q118.1 84.4 122.0 79.4Q126.0 74.4 132.5 66.8L132.5 66.8Q133.0 66.9 134.6 66.9Q136.3 67.0 137.2 67.0L137.2 67.0Q138.0 67.0 138.5 67.0Q138.9 66.9 139.3 66.9L139.3 66.9Q132.1 75.3 127.6 80.7Q123.1 86.1 120.7 89.4Q118.2 92.6 117.3 94.3Q116.4 96.0 116.4 97.0L116.4 97.0Q116.4 98.3 117.7 98.5Q119.1 98.7 119.9 98.7L119.9 98.7Q122.6 98.7 125.7 96.9Q128.8 95.1 131.9 92.5Q135.0 89.8 137.7 87.1Q140.3 84.3 142.0 82.4Q143.8 80.4 144.0 80.1L144.0 80.1L145.0 81.0Q144.5 81.5 142.7 83.6Q140.9 85.7 138.2 88.5Q135.5 91.3 132.3 93.9Q129.1 96.5 125.7 98.3Q122.3 100.1 119.1 100.1Z"/><path transform="translate(0.0 0)" d="M170.6 100.1L170.6 100.1Q167.9 100.1 165.9 99.0Q164.0 98.0 164.0 96.3L164.0 96.3Q164.0 95.0 164.6 93.2Q165.1 91.4 167.4 88.3Q169.6 85.2 174.4 79.8L174.4 79.8Q178.2 75.4 179.7 73.1Q181.2 70.7 181.2 69.5L181.2 69.5Q181.2 68.8 180.7 68.3Q180.2 67.7 178.8 67.7L178.8 67.7Q177.8 67.7 176.2 68.4Q174.6 69.0 172.3 70.5L172.3 70.5Q168.5 73.1 162.8 78.6Q157.2 84.1 150 93.1L150 93.1L145.4 99.0Q144.1 98.8 142.6 98.8L142.6 98.8Q140.8 98.8 139.7 99.0Q138.5 99.1 137.9 99.3L137.9 99.3Q143.4 91.4 147.1 86.2Q150.7 81.0 153.0 77.8Q155.2 74.7 156.3 73.1Q157.4 71.4 157.8 70.7Q158.2 70.0 158.2 69.6L158.2 69.6Q158.3 68.2 157.1 68.2L157.1 68.2Q156.4 68.2 155.0 69.5Q153.5 70.9 151.7 73.0Q149.9 75.0 148.1 77.2Q146.3 79.3 145.0 81.0L145.0 81.0Q144.7 81.2 144.1 80.7L144.1 80.7Q143.9 80.3 144.0 80.1L144.0 80.1Q145.4 78.6 147.2 76.3Q149.0 74.1 150.9 71.8Q152.9 69.5 154.9 68.0Q157.0 66.5 158.9 66.5L158.9 66.5Q160.3 66.5 161.7 67.1Q163.1 67.7 162.8 70.0L162.8 70.0Q162.8 70.8 162.4 72.0Q161.9 73.2 160.6 75.1L160.6 75.1L150.3 89.3L150.6 89.8Q158.2 81.3 163.3 76.3Q168.4 71.4 171.9 69.1L171.9 69.1Q174.3 67.5 176.1 67.0Q177.8 66.5 179.3 66.5L179.3 66.5Q182.5 66.5 183.8 68.0Q185.1 69.6 185.1 71.4L185.1 71.4Q185.0 73.4 183.8 76.1Q182.5 78.8 179.5 82.8Q176.5 86.9 171.1 92.8L171.1 92.8Q168.6 95.4 168.1 96.2Q167.6 96.9 167.6 97.6L167.6 97.6Q167.6 98.1 168.6 98.4Q169.6 98.7 171.1 98.7L171.1 98.7Q174.1 98.7 177.2 97.0Q180.3 95.3 183.3 92.7Q186.2 90.1 188.7 87.5Q191.1 84.8 192.8 82.7Q194.4 80.7 194.9 80.1L194.9 80.1L195.9 81.0Q195.3 81.6 193.6 83.7Q191.9 85.8 189.4 88.6Q186.9 91.3 183.8 93.9Q180.7 96.6 177.3 98.3Q174.0 100.1 170.6 100.1Z"/><path transform="translate(0.0 0)" d="M166.4 138.4L166.4 138.4Q164.4 138.4 163.0 137.3Q161.6 136.2 161.6 135.1L161.6 135.1Q161.5 133.1 163.1 130.7Q164.6 128.4 168.5 125.6Q172.3 122.8 179.1 119.2Q185.8 115.7 196.2 111.3L196.2 111.3Q200.2 106.4 205.1 100.4Q209.9 94.3 215.9 86.9L215.9 86.9L215.5 86.7Q209.1 93.9 204.0 97.0Q198.9 100.1 195.9 100.1L195.9 100.1Q192.8 100.1 191.3 98.3Q189.8 96.6 189.7 93.7L189.7 93.7Q189.7 90.4 191.1 86.7Q192.4 83.0 195.6 79.3L195.6 79.3Q199.8 74.2 203.8 71.4Q207.9 68.7 211.6 67.6Q215.3 66.5 218.4 66.5L218.4 66.5Q221.6 66.5 223.5 67.6Q225.4 68.7 225.4 70.5L225.4 70.5Q225.4 71.9 224.9 73.4L224.9 73.4Q226.4 71.5 227.4 70.2Q228.5 68.8 229.4 67.5L229.4 67.5Q230.0 67.6 230.8 67.8Q231.7 67.9 232.5 67.9L232.5 67.9Q233.2 67.9 234.3 67.8Q235.5 67.8 236.1 67.7L236.1 67.7L220.4 87.9Q215.9 93.9 211.9 98.9Q208.0 103.9 204.6 108.2L204.6 108.2Q214.8 102.9 223.5 96.2Q232.1 89.4 239.8 80.1L239.8 80.1L240.8 81.0Q232.3 91.2 223.0 98.2Q213.7 105.2 202.8 110.4L202.8 110.4Q195.5 119.4 190.4 124.9Q185.2 130.5 181.3 133.4Q177.3 136.3 173.9 137.3Q170.4 138.4 166.4 138.4ZM196.2 98.6L196.2 98.6Q198.9 98.6 204.3 95.1Q209.7 91.6 217.2 82.8L217.2 82.8L221.0 78.2Q222.2 76.5 223.1 74.5Q224.1 72.6 224.1 71.0L224.1 71.0Q224.0 68.0 219.7 68.0L219.7 68.0Q217.4 68.0 212.1 71.5Q206.7 75.0 200.7 82.6L200.7 82.6Q197.1 87.0 195.4 90.4Q193.8 93.7 193.8 96.0L193.8 96.0Q193.9 98.6 196.2 98.6ZM166.6 137.1L166.6 137.1Q169.0 137.1 171.5 136.1Q174.0 135.1 177.0 132.5Q180.1 129.9 184.3 125.3Q188.5 120.7 194.5 113.4L194.5 113.4Q183.0 118.4 176.2 122.2Q169.3 126.1 166.2 129.2Q163.2 132.3 163.2 135.1L163.2 135.1Q163.2 135.6 164.1 136.4Q165.0 137.1 166.6 137.1Z"/><path transform="translate(0.0 0)" d="M237.1 101.1L237.1 101.1Q235.6 101.1 233.2 100.7Q230.8 100.3 228.9 99.0Q227.0 97.8 227.0 95.1L227.0 95.1Q227.0 92.6 228.5 91.0Q230.0 89.5 231.8 88.7Q233.6 87.9 234.5 87.9L234.5 87.9Q236.5 87.9 236.5 89.7L236.5 89.7Q236.4 90.5 235.4 91.2Q234.3 91.8 233.1 91.8L233.1 91.8Q232.5 91.8 231.9 91.4Q231.4 91.0 231.0 90.8L231.0 90.8Q230.5 91.4 229.4 92.4Q228.3 93.5 228.3 95.1L228.3 95.1Q228.3 97.0 229.8 97.9Q231.3 98.8 233.1 99.1Q235.0 99.3 235.9 99.3L235.9 99.3Q238.0 99.3 241.1 97.7Q244.1 96.0 246.8 92.2Q249.5 88.3 250.2 81.7L250.2 81.7Q250.5 79.3 250.7 75.2Q250.9 71.0 252.2 67.2L252.2 67.2Q252.3 67.1 252.3 66.8L252.3 66.8Q250.4 69.1 248.3 71.7Q246.1 74.4 244.2 76.8Q242.2 79.3 240.8 81.0L240.8 81.0Q239.8 82.1 239.4 82.5Q238.9 82.8 239.0 82.8L239.0 82.8Q238.9 82.8 238.6 82.8Q238.3 82.9 238.1 82.5L238.1 82.5Q238.0 82.3 238.6 81.6Q239.1 80.9 239.7 80.1L239.7 80.1Q240.9 78.9 243.2 76.1Q245.6 73.3 248.2 70.1Q250.8 66.9 252.7 64.5L252.7 64.5Q253.0 63.0 253.6 61.9Q254.2 60.7 255.2 60.7L255.2 60.7Q257.2 60.7 257.2 62.3L257.2 62.3Q257.1 63.2 254.9 65.8L254.9 65.8Q253.6 67.3 253.5 67.8Q253.4 68.3 253.4 69.0L253.4 69.0Q253.4 70.8 253.8 73.4Q254.2 76.0 254.7 78.8Q255.2 81.7 255.3 84.3L255.3 84.3Q255.5 88.1 254.4 91.0L254.4 91.0Q255.2 91.1 255.8 91.1L255.8 91.1Q257.3 91.1 259.4 89.7Q261.4 88.2 263.4 86.3Q265.4 84.3 266.9 82.6Q268.4 80.8 268.9 80.1L268.9 80.1L269.9 81.0Q269.1 81.8 267.5 83.7Q265.9 85.5 263.8 87.5Q261.8 89.5 259.6 90.8Q257.5 92.2 255.6 92.2L255.6 92.2Q255.2 92.2 254.8 92.2Q254.4 92.2 254.0 92.1L254.0 92.1Q251.7 97.2 247.2 99.1Q242.7 101.1 237.1 101.1Z"/><path transform="translate(-1.0 0)" d="M295.3 100.1L295.3 100.1Q291.2 100.1 289.3 98.2Q287.3 96.3 287.1 93.6L287.1 93.6Q286.9 90.2 288.5 86.4Q290.0 82.6 291.8 80.0L291.8 80.0Q294.2 76.7 297.6 73.6Q301.0 70.5 305.1 68.5Q309.2 66.5 313.5 66.5L313.5 66.5Q316.1 66.5 317.9 67.9Q319.8 69.2 320.0 72.1L320.0 72.1Q320.3 76.3 318.4 80.8Q316.6 85.4 313.4 89.3L313.4 89.3Q313.7 90.7 315.6 90.7L315.6 90.7Q317.4 90.7 319.5 89.3Q321.7 87.8 323.7 85.9Q325.7 83.9 327.2 82.3Q328.7 80.6 329.2 80.1L329.2 80.1L330.2 81.0Q329.3 81.8 327.6 83.7Q325.9 85.5 323.8 87.4Q321.7 89.4 319.6 90.7Q317.4 92.1 315.5 92.1L315.5 92.1Q313.1 92.1 312.3 90.6L312.3 90.6Q308.7 94.7 304.2 97.4Q299.7 100.1 295.3 100.1ZM296.6 98.6L296.6 98.6Q298.3 98.6 300.5 97.6Q302.8 96.6 305.0 95.0L305.0 95.0Q308.8 92.3 311.8 88.7L311.8 88.7L311.8 88.5Q311.8 85.5 313.4 83.7Q315.0 81.9 316.5 81.4L316.5 81.4Q318.9 76.5 318.7 72.5L318.7 72.5Q318.5 70.1 317.4 69.2Q316.3 68.3 315.0 68.3L315.0 68.3Q312.2 68.3 308.0 71.6Q303.9 75 298.8 81.3L298.8 81.3Q295.2 85.8 293.8 88.9Q292.3 92.0 292.5 94.3L292.5 94.3Q292.5 95.7 293.4 97.1Q294.3 98.6 296.6 98.6Z"/><path transform="translate(-1.0 0)" d="M309.3 138.4L309.3 138.4Q307.3 138.4 305.9 137.0Q304.5 135.7 304.5 133.6L304.5 133.6Q304.4 131.6 305.2 129.1Q306.0 126.5 308.4 122.2Q310.7 117.9 315.2 110.8Q319.7 103.8 327.1 92.8L327.1 92.8L331.5 86.1Q330.0 83.8 329.5 81.5Q329.0 79.2 329.2 77.8L329.2 77.8Q329.4 76.3 330.3 75.3Q331.1 74.3 332.3 74.3L332.3 74.3Q333.5 74.3 334.2 75.1Q335.0 75.8 335.0 77.2L335.0 77.2Q335.0 78.3 334.0 79.8Q333.0 81.4 331.8 82.0L331.8 82.0Q332.0 83.1 332.6 84.4L332.6 84.4Q339.7 73.6 344.2 66.6Q348.7 59.6 351.4 55.3Q354.2 51.0 355.6 48.7Q357.1 46.4 358.0 45.1L358.0 45.1Q365.0 35.1 371.0 29.0Q377.1 22.9 380.8 22.9L380.8 22.9Q382.9 22.9 383.9 24.1Q384.9 25.3 385.0 27.1L385.0 27.1Q385.2 31.2 382.4 36.9Q379.6 42.7 374.9 49.1Q370.1 55.6 364.1 62.0Q358.1 68.4 351.6 73.9Q345.2 79.4 339.1 83.3L339.1 83.3L335.6 88.6Q336.7 89.6 338.1 90.1Q339.4 90.7 341.1 90.8L341.1 90.8Q347.1 91.2 351.2 89.4Q355.3 87.6 358.1 84.9Q360.8 82.2 362.5 80.2L362.5 80.2L363.6 81.0Q362.8 81.7 361.1 83.7Q359.3 85.6 356.6 87.8Q353.8 89.9 350 91.2Q346.1 92.6 341.0 92.0L341.0 92.0Q339.2 91.8 337.7 91.3Q336.1 90.7 334.9 89.8L334.9 89.8L332.9 92.9Q332.3 101.5 330.1 109.6Q328.0 117.7 324.7 124.2Q321.5 130.7 317.5 134.5Q313.6 138.4 309.3 138.4ZM340.9 80.5L340.9 80.5Q346.3 76.9 352.2 71.5Q358.0 66.2 363.5 60.0Q369.0 53.8 373.4 47.6Q377.8 41.4 380.4 36.0Q382.9 30.6 382.8 26.8L382.8 26.8Q382.7 25.4 382.1 24.7Q381.4 24.0 380.5 24.0L380.5 24.0Q379.5 24.0 377.9 25.2Q376.3 26.5 373.8 29.7Q371.2 33.0 367.3 39.2L367.3 39.2Q362.8 46.3 358.7 52.8Q354.5 59.3 350.2 66.0Q345.9 72.7 340.9 80.5ZM309.6 137.2L309.6 137.2Q311.7 137.2 315.0 134.2Q318.3 131.2 321.7 125.7Q325.2 120.1 327.8 112.4Q330.4 104.7 331.3 95.4L331.3 95.4Q326.8 102.2 322.5 108.7Q318.3 115.1 314.8 120.5Q311.4 125.9 309.4 129.7Q307.4 133.5 307.4 135.1L307.4 135.1Q307.4 135.9 308.0 136.5Q308.6 137.2 309.6 137.2Z"/><path transform="translate(-8.0 0)" d="M432.4 101.2L432.4 101.2Q429.1 101.2 424.9 100.4Q420.8 99.7 416.6 98.7Q412.5 97.6 409.2 96.7L409.2 96.7Q401.6 100.1 392.3 100.1L392.3 100.1Q386.8 100.1 384.2 98.8Q381.6 97.5 381.6 96.0L381.6 96.0Q381.6 93.8 384.6 92.4Q387.7 91.1 392.5 91.1L392.5 91.1Q396.2 91.1 400.0 91.9Q403.9 92.8 408.5 94.5L408.5 94.5Q412.3 92.0 416.3 87.6Q420.4 83.2 425.5 76.2L425.5 76.2Q415.4 75.9 409.2 71.8Q403.1 67.7 403.1 61.4L403.1 61.4Q403.1 57.2 405.8 53.2Q408.5 49.2 412.9 46.6Q417.2 44.0 422.3 44.0L422.3 44.0Q423.1 44.0 423.2 44.3Q423.3 44.5 423.3 44.6L423.3 44.6Q423.3 44.9 423.1 45.0Q423.0 45.1 421.8 45.2L421.8 45.2Q416.8 45.7 413.4 48.1Q410.1 50.4 408.4 53.7Q406.7 57.0 406.7 60.2L406.7 60.2Q406.7 67.7 412.1 71.2Q417.5 74.7 426.5 74.8L426.5 74.8Q428.1 72.7 429.7 70.3Q431.4 67.9 433.2 65.2L433.2 65.2Q441.3 53.0 448.4 45.6Q455.5 38.2 462.3 34.9Q469.0 31.5 476.0 31.5L476.0 31.5Q479.6 31.5 481.8 33.2Q484.1 34.8 484.1 37.5L484.1 37.5Q484.1 41.6 480.9 46.3Q477.8 51.1 472.4 55.9Q467.1 60.6 460.4 64.7Q453.7 68.9 446.6 71.8Q439.5 74.7 432.8 75.7L432.8 75.7Q427.5 82.9 422.3 87.8Q417.0 92.7 411.5 95.6L411.5 95.6Q415.7 97.1 420.9 98.0Q426.1 98.8 432.7 98.8L432.7 98.8Q438.2 98.8 441.5 97.7Q444.8 96.7 446.5 95.5Q448.2 94.2 448.7 93.8L448.7 93.8Q449.4 93.0 449.7 93.6L449.7 93.6Q449.8 93.9 449.5 94.4Q449.3 94.9 448.9 95.3L448.9 95.3Q444.9 98.9 440.8 100.0Q436.6 101.2 432.4 101.2ZM434.0 74.2L434.0 74.2Q440.4 73.1 447.1 70.2Q453.7 67.3 459.7 63.3Q465.8 59.3 470.5 54.7Q475.3 50.2 478.1 45.7Q480.8 41.1 480.8 37.2L480.8 37.2Q480.8 35.5 479.3 34.1Q477.9 32.7 475.7 32.7L475.7 32.7Q467.8 32.7 460.2 39.0Q452.5 45.3 445.4 57.0L445.4 57.0Q442.4 61.9 439.6 66.2Q436.7 70.5 434.0 74.2ZM391.7 98.9L391.7 98.9Q395.9 98.9 399.4 98.2Q402.9 97.6 406.3 95.8L406.3 95.8Q403.0 94.9 399.4 94.2Q395.9 93.6 392.9 93.6L392.9 93.6Q383.0 93.6 383.0 96.0L383.0 96.0Q383.0 96.8 385.3 97.8Q387.6 98.9 391.7 98.9Z"/><path transform="translate(-8.0 0)" d="M484.3 57.2L484.3 57.2Q483.0 57.2 482.2 56.3Q481.4 55.5 481.4 54.2L481.4 54.2Q481.4 52.4 482.8 51.0Q484.2 49.6 486.2 49.6L486.2 49.6Q487.6 49.6 488.4 50.5Q489.2 51.4 489.2 52.6L489.2 52.6Q489.2 54.4 487.7 55.8Q486.1 57.2 484.3 57.2ZM459.4 100.1L459.4 100.1Q456.4 100.1 454.6 99.0Q452.7 97.9 452.7 96.0L452.7 96.0Q452.7 94.5 453.5 92.6Q454.2 90.7 456.3 87.6Q458.4 84.4 462.3 79.4Q466.3 74.4 472.8 66.8L472.8 66.8Q473.2 66.9 474.9 66.9Q476.6 67.0 477.5 67.0L477.5 67.0Q478.3 67.0 478.7 67.0Q479.2 66.9 479.5 66.9L479.5 66.9Q472.4 75.3 467.9 80.7Q463.4 86.1 460.9 89.4Q458.5 92.6 457.6 94.3Q456.6 96.0 456.6 97.0L456.6 97.0Q456.6 98.3 458.0 98.5Q459.4 98.7 460.2 98.7L460.2 98.7Q462.8 98.7 466.0 96.9Q469.1 95.1 472.2 92.5Q475.3 89.8 478.0 87.1Q480.6 84.3 482.3 82.4Q484.0 80.4 484.3 80.1L484.3 80.1L485.3 81.0Q484.8 81.5 483.0 83.6Q481.2 85.7 478.5 88.5Q475.8 91.3 472.6 93.9Q469.4 96.5 466.0 98.3Q462.6 100.1 459.4 100.1Z"/><path transform="translate(-8.0 0)" d="M455.8 138.4L455.8 138.4Q453.8 138.4 452.4 137.3Q451.0 136.2 451.0 135.1L451.0 135.1Q450.9 133.1 452.5 130.7Q454.0 128.4 457.9 125.6Q461.7 122.8 468.5 119.2Q475.2 115.7 485.6 111.3L485.6 111.3Q489.6 106.4 494.5 100.4Q499.3 94.3 505.3 86.9L505.3 86.9L504.9 86.7Q498.5 93.9 493.4 97.0Q488.3 100.1 485.3 100.1L485.3 100.1Q482.2 100.1 480.7 98.3Q479.3 96.6 479.2 93.7L479.2 93.7Q479.2 90.4 480.5 86.7Q481.8 83.0 485.0 79.3L485.0 79.3Q489.2 74.2 493.2 71.4Q497.3 68.7 501.0 67.6Q504.7 66.5 507.8 66.5L507.8 66.5Q511.0 66.5 512.9 67.6Q514.8 68.7 514.8 70.5L514.8 70.5Q514.8 71.9 514.3 73.4L514.3 73.4Q515.8 71.5 516.8 70.2Q517.9 68.8 518.9 67.5L518.9 67.5Q519.4 67.6 520.2 67.8Q521.1 67.9 521.9 67.9L521.9 67.9Q522.6 67.9 523.7 67.8Q524.9 67.8 525.5 67.7L525.5 67.7L509.8 87.9Q505.3 93.9 501.3 98.9Q497.4 103.9 494.0 108.2L494.0 108.2Q504.3 102.9 512.9 96.2Q521.5 89.4 529.3 80.1L529.3 80.1L530.2 81.0Q521.7 91.2 512.4 98.2Q503.1 105.2 492.2 110.4L492.2 110.4Q484.9 119.4 479.8 124.9Q474.6 130.5 470.7 133.4Q466.8 136.3 463.3 137.3Q459.8 138.4 455.8 138.4ZM485.6 98.6L485.6 98.6Q488.3 98.6 493.7 95.1Q499.1 91.6 506.6 82.8L506.6 82.8L510.4 78.2Q511.6 76.5 512.5 74.5Q513.5 72.6 513.5 71.0L513.5 71.0Q513.4 68.0 509.1 68.0L509.1 68.0Q506.8 68.0 501.5 71.5Q496.1 75.0 490.1 82.6L490.1 82.6Q486.5 87.0 484.8 90.4Q483.2 93.7 483.2 96.0L483.2 96.0Q483.4 98.6 485.6 98.6ZM456.0 137.1L456.0 137.1Q458.5 137.1 460.9 136.1Q463.4 135.1 466.4 132.5Q469.5 129.9 473.7 125.3Q477.9 120.7 483.9 113.4L483.9 113.4Q472.4 118.4 465.6 122.2Q458.7 126.1 455.6 129.2Q452.6 132.3 452.6 135.1L452.6 135.1Q452.6 135.6 453.5 136.4Q454.4 137.1 456.0 137.1Z"/><path transform="translate(-8.0 0)" d="M549.1 100.1L549.1 100.1Q546.9 100.1 544.8 99.0Q542.6 98.0 542.6 96.3L542.6 96.3Q542.6 95.0 543.2 93.2Q543.9 91.4 546.0 88.3Q548.2 85.2 553.0 79.8L553.0 79.8Q556.9 75.4 558.4 73.1Q559.8 70.7 559.8 69.5L559.8 69.5Q559.8 68.8 559.4 68.3Q558.9 67.7 557.5 67.7L557.5 67.7Q556.4 67.7 554.5 68.4Q552.5 69.0 550.2 70.5L550.2 70.5Q546.4 73.1 540.7 78.6Q535.0 84.1 527.8 93.1L527.8 93.1L523.3 99.0Q522.5 98.9 521.8 98.8Q521.1 98.8 520.5 98.8L520.5 98.8Q518.7 98.8 517.5 99.0Q516.3 99.1 515.8 99.3L515.8 99.3L569.8 22.1Q570.5 22.1 571.5 22.2Q572.6 22.3 574.5 22.3L574.5 22.3Q574.9 22.3 575.4 22.2Q576.0 22.1 576.6 22.1L576.6 22.1L528.2 89.3L528.4 89.8Q535.9 81.3 541.1 76.3Q546.3 71.4 549.8 69.1L549.8 69.1Q552.2 67.5 554.3 67.0Q556.4 66.5 558.0 66.5L558.0 66.5Q561.1 66.5 562.5 68.0Q563.8 69.6 563.7 71.4L563.7 71.4Q563.6 73.4 562.4 76.1Q561.2 78.8 558.2 82.8Q555.2 86.9 549.7 92.8L549.7 92.8Q547.3 95.4 546.8 96.2Q546.2 96.9 546.2 97.6L546.2 97.6Q546.2 98.1 547.3 98.4Q548.4 98.7 549.7 98.7L549.7 98.7Q552.8 98.7 555.9 97.0Q559.1 95.3 562.0 92.7Q564.9 90.1 567.3 87.4Q569.7 84.7 571.4 82.7Q573.0 80.7 573.5 80.1L573.5 80.1L574.6 81.0Q573.9 81.6 572.2 83.7Q570.6 85.8 568.0 88.6Q565.5 91.4 562.4 94.0Q559.3 96.6 555.9 98.3Q552.5 100.1 549.1 100.1Z"/><path transform="translate(-8.0 0)" d="M570.1 100.1L570.1 100.1Q567.4 100.1 566.1 99.0Q564.7 97.9 564.7 96.2L564.7 96.2Q564.7 94.9 565.1 93.6Q565.4 92.3 566.6 90.3Q567.7 88.3 570.0 84.9Q572.3 81.5 576.2 76.0L576.2 76.0L588.8 58.3L584.9 58.3Q583.5 58.3 583.5 57.7L583.5 57.7Q583.5 56.9 585.3 56.9L585.3 56.9L589.7 56.9L598.8 44.2Q599.4 44.3 600.5 44.4Q601.5 44.4 603.5 44.4L603.5 44.4Q604.4 44.4 605.6 44.2L605.6 44.2L596.1 56.9L608.7 56.9Q610.1 56.9 610.1 57.6L610.1 57.6Q610.1 58.3 608.9 58.3L608.9 58.3L595.1 58.3L582.2 75.7Q577.6 81.8 574.8 85.8Q572.0 89.7 570.6 92.0Q569.1 94.3 568.6 95.5Q568.1 96.6 568.1 97.1L568.1 97.1Q568.1 98.6 570.6 98.7L570.6 98.7Q573.9 98.6 577.5 96.5Q581.1 94.3 584.4 91.1Q587.7 88.0 590.4 84.9Q593.0 81.9 594.5 80.1L594.5 80.1L595.6 81.0Q594.1 82.6 591.4 85.7Q588.7 88.9 585.1 92.2Q581.6 95.5 577.7 97.8Q573.9 100.1 570.1 100.1Z"/></symbol>
+<symbol id="sol-arch" viewBox="0 0 1000 1300"><g clip-path="url(#archclip)"><rect width="1000" height="1300" fill="url(#sky)"/>
+<path d="M980 40 L560 1300 L700 1300 Z" fill="url(#ray)"/><path d="M1000 140 L780 1300 L860 1300 Z" fill="url(#ray)"/><path d="M900 0 L380 1300 L440 1300 Z" fill="url(#ray)" opacity=".6"/>
+<circle cx="640" cy="760" r="330" fill="url(#sun)"/><g transform="translate(-37 300) scale(0.49)" style="fill:var(--sil,#17133F)"><path d="M 554 32.9 C 550.4 33.3, 543.4 34.2, 538.5 34.9 C 533.5 35.6, 523.0 37.0, 515.2 38.1 C 499.5 40.2, 489.8 42.9, 474 49.6 C 451.6 59.0, 421.5 86.5, 403.3 114.1 C 394.1 128.0, 389.1 128.4, 372 116.4 C 352.0 102.5, 345.0 100.4, 321.9 101.6 C 300.6 102.8, 298.2 103.8, 282.1 119.4 C 271.6 129.6, 270.4 131.2, 265.8 140.6 C 260.2 152.2, 247 191.4, 247 196.4 C 247 198.2, 246.0 203.2, 244.9 207.5 C 243.7 211.9, 242.0 219.3, 241.0 224 C 240.0 228.6, 238.2 235.2, 237.1 238.7 C 234.2 247.2, 234.3 256.7, 237.4 266.6 C 238.7 270.9, 240.3 277.2, 241.0 280.5 C 244.7 299.0, 258.8 322.8, 269.4 328.2 C 274.4 330.7, 287.9 333.9, 293.9 333.9 C 299.1 334.0, 310.5 330.9, 318.5 327.4 C 325.9 324.1, 330.9 324.2, 334.0 327.5 C 336.3 330.0, 336.5 330.8, 336.5 342.3 C 336.6 359.0, 338.5 365.6, 346.5 377.5 C 349.9 382.7, 353.6 389.0, 354.6 391.5 C 355.6 394.1, 362.1 407.5, 369.0 421.3 C 376.0 435.2, 384.4 452.1, 387.8 459 C 391.3 465.8, 395.3 473.9, 396.8 477 C 399.1 481.5, 401.2 483.7, 409.2 489.7 C 420.3 498.0, 422.5 500.7, 427.0 511 C 434.1 527.2, 431.2 564.9, 422.2 572.0 C 418.7 574.7, 411.8 574.5, 404.1 571.5 C 394.8 567.7, 389.6 568.4, 384.2 574.1 C 378.6 580.2, 375.6 596.1, 376.6 614.9 C 377.7 637.2, 375.4 640.7, 353.3 649.7 C 339.9 655.1, 336.2 656.1, 321.8 657.9 C 316.9 658.5, 305.2 661.4, 295.3 664.5 C 285.5 667.5, 273.6 670.7, 269 671.6 C 249.9 675.1, 242.0 677.3, 232 681.9 C 226.2 684.6, 218.5 688.0, 215 689.5 C 204.6 693.8, 185.5 703.6, 178.2 708.3 C 168.2 714.8, 162.6 721.5, 158.6 732 C 157.6 734.4, 153.5 742.1, 149.4 749 C 137.2 769.6, 127.2 792.0, 124.7 804.3 L 122.5 814.7 125.4 827.6 C 127.0 834.7, 128.6 845.4, 129.0 851.5 C 129.4 857.5, 130.7 866.9, 131.8 872.3 C 133.0 877.7, 134.4 885.1, 135.0 888.8 C 135.5 892.4, 137.4 901.8, 139.1 909.5 C 141.7 921.5, 142.0 924.5, 141.4 931 C 139.9 945.3, 140.3 947.5, 146.2 962 C 149.2 969.4, 152.3 977.3, 153.0 979.5 C 153.7 981.7, 155.5 986.0, 157.0 989.0 C 158.6 992.1, 162.1 1001.8, 165.0 1010.5 C 167.8 1019.3, 171.2 1029.4, 172.5 1033 C 175.0 1039.6, 178.5 1051.6, 181.5 1063 C 182.4 1066.5, 185.5 1075.1, 188.5 1082.0 C 191.5 1088.8, 195.1 1099.0, 196.5 1104.5 C 197.9 1110.0, 200.4 1118.7, 202.0 1124 C 205.0 1133.9, 208.7 1149.4, 211.4 1164.3 C 213.5 1175.3, 216.2 1183.5, 225.5 1206.6 C 234.5 1228.8, 238.0 1240.2, 242.0 1259.2 C 246.0 1278.7, 251.2 1295.5, 260.3 1318.0 C 270.0 1342.1, 275.1 1358.6, 279.4 1379.6 C 284.6 1404.7, 292.3 1425.1, 304.8 1446.2 C 313.8 1461.5, 317.8 1470.5, 318.9 1478.5 C 323.0 1507.3, 324.3 1514.2, 327.7 1524 C 334.6 1543.8, 333.9 1546.1, 308.8 1584 C 289.1 1613.6, 284.7 1621.4, 275.9 1642.4 C 263.4 1672.0, 251.1 1694.8, 232.1 1723.2 C 198.5 1773.6, 185.9 1805.7, 174.9 1869 C 172.7 1881.9, 168.7 1901.5, 166.2 1912.5 L 161.5 1932.5 161.2 2011.2 L 160.9 2090 578.5 2090 L 996.0 2090 995.7 2012.2 C 995.5 1953.9, 995.1 1933.6, 994.2 1931 C 993.5 1929.0, 990.0 1913.1, 986.4 1895.5 C 982.8 1877.9, 975.4 1845.5, 969.9 1823.5 C 955.0 1764.2, 953.3 1755.7, 950.5 1726.8 C 949.6 1718.1, 948.2 1707.4, 947.4 1702.9 C 945.3 1691.7, 931.2 1645.1, 925.4 1630.5 C 907.4 1583.9, 899.1 1550.3, 900.5 1529 C 901.9 1506.3, 901.6 1504.8, 893.5 1496.0 C 885.5 1487.4, 885.1 1484.3, 891.1 1474.4 C 897.6 1463.7, 898.0 1461.3, 899.0 1433 C 900.3 1396.4, 899.6 1399.5, 915.2 1359.8 C 931.3 1318.9, 934.4 1313.0, 941.6 1309.8 C 950.3 1305.9, 959.2 1310.1, 968.7 1322.7 C 977.1 1333.6, 982.9 1338.7, 998.7 1348.9 C 1027.0 1367.3, 1028.6 1369.1, 1043.9 1401.8 C 1049.7 1414.2, 1062.3 1422.6, 1081.1 1426.5 C 1092.3 1428.8, 1096.5 1431.4, 1103.8 1440.5 C 1117.0 1457.1, 1124.7 1463.4, 1142.5 1472.0 C 1151.6 1476.5, 1156.3 1479.5, 1162.3 1484.9 C 1172.4 1493.8, 1174.8 1494.9, 1196.2 1500.4 C 1218.2 1506.0, 1222.4 1506.5, 1232.2 1504.6 C 1244.2 1502.2, 1249.0 1499.3, 1262.5 1486.0 C 1269.1 1479.5, 1277.1 1472.3, 1280.2 1470.0 C 1283.4 1467.7, 1288.7 1462.6, 1291.9 1458.6 C 1299.3 1449.7, 1303.4 1446.5, 1316.8 1439.5 C 1333.7 1430.7, 1341.3 1423.4, 1350.5 1406.8 C 1353.2 1401.9, 1356.9 1396.1, 1358.7 1393.9 C 1363.4 1388.3, 1383.9 1375.0, 1400.8 1366.5 C 1414.2 1359.8, 1423.4 1354.6, 1459 1334.0 C 1474.7 1324.8, 1475.7 1324.1, 1485.4 1315.1 C 1495.2 1305.9, 1500.6 1303.2, 1506.0 1304.9 C 1510.0 1306.0, 1514.9 1310.9, 1515.0 1313.8 C 1515.0 1314.7, 1515.1 1319.8, 1515.2 1325.0 L 1515.5 1334.6 1523.4 1347.8 C 1533.2 1364.1, 1535.5 1366.5, 1541.2 1366.1 C 1545.2 1365.8, 1545.4 1363.2, 1546.0 1318 L 1546.6 1274.5 1554.3 1239 C 1558.5 1219.4, 1562.6 1200.6, 1563.5 1197.1 C 1564.6 1192.3, 1566.8 1188.0, 1572.3 1179.6 C 1581.5 1165.7, 1581.2 1166.3, 1585.4 1153.3 C 1599.1 1111.0, 1584.5 1060.6, 1554 1045.0 C 1549.1 1042.5, 1547.2 1040.1, 1546.1 1035.0 C 1544.4 1027.6, 1541.0 1026.2, 1535.7 1030.8 C 1529.7 1036.0, 1529.4 1036.1, 1494.1 1037.7 C 1462.9 1039.1, 1459.5 1039.1, 1447 1037.5 C 1439.5 1036.6, 1431.6 1035.6, 1429.3 1035.3 C 1421.8 1034.5, 1418.5 1030.5, 1399.4 999 C 1380.7 968.1, 1379.8 966.1, 1382.4 961.0 C 1384.2 957.6, 1387.6 956.4, 1398 955.5 C 1423.6 953.2, 1446.9 944.3, 1460.9 931.3 C 1472.3 920.8, 1477.5 910.6, 1481.4 891.5 C 1484.1 878.3, 1485.6 875.1, 1494.9 863.4 C 1504.0 852.0, 1507.4 844.8, 1510.0 831.8 C 1514.3 810.7, 1525.0 801.0, 1542.3 802.6 C 1556.9 803.9, 1749.3 831.1, 1757 832.9 C 1761.6 834.0, 1774.2 836.6, 1784.9 838.5 C 1814.7 844.0, 1814.2 843.6, 1813.0 864 C 1812.4 875.5, 1812.1 876.9, 1809.1 882.5 C 1802.9 893.8, 1807.2 903.5, 1818.5 903.5 C 1829.3 903.5, 1833.3 895.2, 1828.5 882.7 C 1826.4 877.1, 1826.0 874.3, 1826.0 866.7 C 1826.1 849.1, 1828.6 846.6, 1843.9 849.4 C 1867.4 853.6, 1867.4 853.7, 1867.1 871.8 C 1866.9 884.1, 1866.8 884.7, 1863.3 891.8 C 1858.9 900.8, 1859.0 905.5, 1863.9 910.4 C 1868.3 914.8, 1876.3 914.9, 1880.9 910.5 C 1885.4 906.2, 1885.8 902.0, 1882.5 892.7 C 1879.1 883.3, 1879.0 866.6, 1882.2 861.6 C 1886.1 855.7, 1891.9 858.5, 1898.8 869.6 C 1909.8 887.2, 1931.1 893.6, 1949.1 884.7 C 1980.5 869.2, 1980.8 823.6, 1949.6 808.5 C 1941.5 804.6, 1926.3 801.3, 1918.5 801.9 C 1907.8 802.5, 1903.2 802.3, 1897 800.7 C 1893.4 799.8, 1886.9 798.3, 1882.5 797.5 C 1872.4 795.6, 1869.4 792.9, 1870.3 786.5 C 1871.2 779.8, 1875.6 768.1, 1878.6 764.3 C 1885.4 755.7, 1885.5 755.6, 1885.5 750.2 C 1885.5 742.6, 1881.3 738.5, 1873.5 738.5 C 1868.6 738.5, 1867.6 738.8, 1864.7 741.7 L 1861.5 745.0 1861.4 756.7 C 1861.3 777.2, 1855.1 791, 1846.2 791 C 1841.0 791, 1821.7 787.4, 1819.1 786.0 C 1813.1 782.8, 1817.4 763.5, 1826.5 752.8 C 1833.2 744.9, 1833.6 737.9, 1827.8 732.3 C 1823.3 728, 1815.3 728.1, 1810.7 732.7 L 1807.5 736.0 1807.4 747.2 C 1807.4 756.7, 1806.9 759.8, 1804.5 767.4 C 1800.1 781.5, 1797.0 783.5, 1783.8 780.9 C 1780.9 780.3, 1774.2 779.6, 1769 779.4 C 1758.9 779.1, 1553.3 737.2, 1540.5 732.9 C 1537.2 731.8, 1532.7 730.9, 1530.5 730.9 C 1525.5 730.9, 1518.4 729.0, 1510.0 725.5 C 1506.1 723.8, 1500.5 722.5, 1495.4 721.9 C 1477.6 720.1, 1475.1 718.7, 1465.2 704.7 C 1433.4 660.1, 1384.1 631.4, 1317.0 618.8 C 1301.2 615.9, 1267.7 615.1, 1249.9 617.4 C 1230.5 619.9, 1215.8 618.6, 1204.1 613.4 C 1199.5 611.5, 1193.3 609.3, 1190.1 608.8 C 1172.1 605.4, 1170.0 603.7, 1161.2 585.8 C 1157.8 579.0, 1151.6 567.6, 1147.4 560.5 C 1134.4 538.5, 1109.4 489.3, 1105.5 478.0 C 1103.5 472.2, 1100.5 465.0, 1098.8 462.0 C 1097.1 458.9, 1093.6 452.6, 1091.0 448 C 1088.4 443.3, 1084.2 436.3, 1081.6 432.5 C 1070.4 415.8, 1045.5 360.8, 1043.0 347.4 C 1041.2 338.0, 1040.6 336.7, 1034.5 327.5 C 1023.7 311.3, 1015.8 294.0, 1007.5 268.2 C 1001.1 248.7, 997.1 246.4, 978.7 251.6 C 958.8 257.3, 954.6 262.5, 960.4 274.5 C 965.5 284.8, 970.8 286.0, 980.7 279.0 C 989.7 272.5, 996.9 274.1, 1001.9 283.8 C 1004.2 288.4, 1011.4 311.5, 1013.0 319.3 C 1014.2 325.6, 1024.2 345.9, 1031.6 357.1 C 1034.0 360.8, 1038.1 368.5, 1040.6 374.1 C 1043.1 379.8, 1046.9 388.3, 1048.9 393 C 1051.0 397.6, 1054.3 404.8, 1056.2 409.0 C 1058.2 413.1, 1060.7 420.1, 1061.8 424.5 C 1065.8 440.1, 1070.7 451.7, 1079.4 465.9 C 1084.0 473.6, 1089.2 482.5, 1090.9 485.8 C 1092.6 489.2, 1096.0 495.0, 1098.4 498.8 C 1100.9 502.6, 1107.1 514.2, 1112.3 524.6 C 1117.4 535.0, 1122.8 545.7, 1124.3 548.5 C 1127.0 553.7, 1135.5 571.6, 1140.8 583.3 C 1142.5 587.0, 1144.8 591.3, 1145.8 592.8 C 1148.5 596.5, 1167.6 634.6, 1172.5 645.8 C 1174.7 650.9, 1180.0 661.9, 1184.3 670.3 C 1188.6 678.6, 1193.3 688.2, 1194.7 691.5 C 1196.2 694.8, 1200.5 703.5, 1204.3 711 C 1237.4 775.8, 1253.7 807.3, 1256.5 812 C 1258.3 815.0, 1263.5 824.7, 1268.2 833.5 C 1272.8 842.3, 1280.7 857.1, 1285.6 866.5 C 1307.1 906.8, 1318.9 930.1, 1318.9 931.7 C 1318.9 935.2, 1317.4 936.3, 1313.1 935.7 C 1304.5 934.5, 1303.1 932.7, 1284.2 897 C 1277.1 883.5, 1268.8 868.4, 1266 863.5 C 1263.1 858.5, 1253.0 839.6, 1243.7 821.5 C 1234.4 803.3, 1225.9 787.1, 1224.9 785.3 C 1223.8 783.6, 1217.9 772.2, 1211.7 759.8 C 1199.9 736.7, 1180.8 700.9, 1176.4 693.8 C 1175.0 691.6, 1172.3 686.6, 1170.4 682.6 C 1168.5 678.7, 1164.8 671.6, 1162.1 667 C 1150.6 647.2, 1149.9 646.5, 1135.0 643.8 C 1087.1 635.1, 1087.6 635.2, 1081.1 623.1 C 1076.1 613.7, 1071.3 611.8, 1064.9 616.5 C 1056.7 622.7, 1053.2 621.9, 1042.1 611.5 C 1032.2 602.3, 1024.5 597.1, 1009.7 589.7 C 1001.3 585.5, 996.7 582.5, 994.1 579.6 C 981.3 565.4, 978.1 564.0, 961.0 566.1 C 944.4 568.1, 937.9 567.8, 927.5 564.7 C 920.1 562.5, 916.7 562.0, 909 562.1 C 897.8 562.3, 892.3 560.6, 881.3 553.4 C 873.5 548.3, 858.3 543.1, 842.2 540.0 C 826.4 537.0, 824.7 535.5, 821.1 521.0 C 817.7 507.5, 817.8 506.7, 825.8 499.0 C 834.4 490.8, 835.6 487.7, 833.9 477.9 C 831.8 465.1, 836.6 459.3, 854.1 453.9 C 866.1 450.2, 871.4 446.4, 875.2 439.0 C 879.7 430.1, 877.8 420.5, 869.6 411.2 C 867.3 408.6, 863.1 403.6, 860.4 400.1 C 857.7 396.6, 853.9 391.9, 852.1 389.6 C 850.3 387.3, 847.2 382.5, 845.2 379 C 843.2 375.4, 839.4 369.4, 836.6 365.6 C 833.9 361.8, 829.4 354.5, 826.8 349.3 C 821.0 338.1, 820.6 333.6, 824.5 324.1 C 826.3 319.6, 827 316.2, 827 310.9 C 827 302.5, 828.4 298.9, 834.6 292.0 C 838.4 287.8, 841 283.4, 841 281.0 C 841 280.6, 838.7 276.9, 836.0 272.9 C 829.4 263.2, 828.2 259.0, 827.6 243.5 C 827.1 230.6, 826.9 229.6, 820.4 207.4 C 819.4 203.9, 817.2 200.3, 813.4 195.9 C 807.7 189.3, 804.2 183.5, 802.0 176.6 C 801.2 174.2, 798.0 170.1, 793.1 165.1 C 787.4 159.5, 785.0 156.3, 784.0 153 C 780.6 142.1, 777.5 138.4, 767.7 133.6 C 753.7 126.8, 751.7 118.4, 763.7 117.0 C 773.3 115.8, 772.1 110.7, 759.1 97.9 C 750.2 89.2, 730.1 74.2, 715.1 65.1 C 708.9 61.4, 678.6 47.9, 670.0 45.0 C 639.7 34.9, 587.5 29.5, 554 32.9" fill-rule="evenodd"/></g></g></symbol>
+<mask id="archknock" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1300"><rect width="1000" height="1300" fill="#fff"/><g transform="translate(-37 300) scale(0.49)"><path d="M 554 32.9 C 550.4 33.3, 543.4 34.2, 538.5 34.9 C 533.5 35.6, 523.0 37.0, 515.2 38.1 C 499.5 40.2, 489.8 42.9, 474 49.6 C 451.6 59.0, 421.5 86.5, 403.3 114.1 C 394.1 128.0, 389.1 128.4, 372 116.4 C 352.0 102.5, 345.0 100.4, 321.9 101.6 C 300.6 102.8, 298.2 103.8, 282.1 119.4 C 271.6 129.6, 270.4 131.2, 265.8 140.6 C 260.2 152.2, 247 191.4, 247 196.4 C 247 198.2, 246.0 203.2, 244.9 207.5 C 243.7 211.9, 242.0 219.3, 241.0 224 C 240.0 228.6, 238.2 235.2, 237.1 238.7 C 234.2 247.2, 234.3 256.7, 237.4 266.6 C 238.7 270.9, 240.3 277.2, 241.0 280.5 C 244.7 299.0, 258.8 322.8, 269.4 328.2 C 274.4 330.7, 287.9 333.9, 293.9 333.9 C 299.1 334.0, 310.5 330.9, 318.5 327.4 C 325.9 324.1, 330.9 324.2, 334.0 327.5 C 336.3 330.0, 336.5 330.8, 336.5 342.3 C 336.6 359.0, 338.5 365.6, 346.5 377.5 C 349.9 382.7, 353.6 389.0, 354.6 391.5 C 355.6 394.1, 362.1 407.5, 369.0 421.3 C 376.0 435.2, 384.4 452.1, 387.8 459 C 391.3 465.8, 395.3 473.9, 396.8 477 C 399.1 481.5, 401.2 483.7, 409.2 489.7 C 420.3 498.0, 422.5 500.7, 427.0 511 C 434.1 527.2, 431.2 564.9, 422.2 572.0 C 418.7 574.7, 411.8 574.5, 404.1 571.5 C 394.8 567.7, 389.6 568.4, 384.2 574.1 C 378.6 580.2, 375.6 596.1, 376.6 614.9 C 377.7 637.2, 375.4 640.7, 353.3 649.7 C 339.9 655.1, 336.2 656.1, 321.8 657.9 C 316.9 658.5, 305.2 661.4, 295.3 664.5 C 285.5 667.5, 273.6 670.7, 269 671.6 C 249.9 675.1, 242.0 677.3, 232 681.9 C 226.2 684.6, 218.5 688.0, 215 689.5 C 204.6 693.8, 185.5 703.6, 178.2 708.3 C 168.2 714.8, 162.6 721.5, 158.6 732 C 157.6 734.4, 153.5 742.1, 149.4 749 C 137.2 769.6, 127.2 792.0, 124.7 804.3 L 122.5 814.7 125.4 827.6 C 127.0 834.7, 128.6 845.4, 129.0 851.5 C 129.4 857.5, 130.7 866.9, 131.8 872.3 C 133.0 877.7, 134.4 885.1, 135.0 888.8 C 135.5 892.4, 137.4 901.8, 139.1 909.5 C 141.7 921.5, 142.0 924.5, 141.4 931 C 139.9 945.3, 140.3 947.5, 146.2 962 C 149.2 969.4, 152.3 977.3, 153.0 979.5 C 153.7 981.7, 155.5 986.0, 157.0 989.0 C 158.6 992.1, 162.1 1001.8, 165.0 1010.5 C 167.8 1019.3, 171.2 1029.4, 172.5 1033 C 175.0 1039.6, 178.5 1051.6, 181.5 1063 C 182.4 1066.5, 185.5 1075.1, 188.5 1082.0 C 191.5 1088.8, 195.1 1099.0, 196.5 1104.5 C 197.9 1110.0, 200.4 1118.7, 202.0 1124 C 205.0 1133.9, 208.7 1149.4, 211.4 1164.3 C 213.5 1175.3, 216.2 1183.5, 225.5 1206.6 C 234.5 1228.8, 238.0 1240.2, 242.0 1259.2 C 246.0 1278.7, 251.2 1295.5, 260.3 1318.0 C 270.0 1342.1, 275.1 1358.6, 279.4 1379.6 C 284.6 1404.7, 292.3 1425.1, 304.8 1446.2 C 313.8 1461.5, 317.8 1470.5, 318.9 1478.5 C 323.0 1507.3, 324.3 1514.2, 327.7 1524 C 334.6 1543.8, 333.9 1546.1, 308.8 1584 C 289.1 1613.6, 284.7 1621.4, 275.9 1642.4 C 263.4 1672.0, 251.1 1694.8, 232.1 1723.2 C 198.5 1773.6, 185.9 1805.7, 174.9 1869 C 172.7 1881.9, 168.7 1901.5, 166.2 1912.5 L 161.5 1932.5 161.2 2011.2 L 160.9 2090 578.5 2090 L 996.0 2090 995.7 2012.2 C 995.5 1953.9, 995.1 1933.6, 994.2 1931 C 993.5 1929.0, 990.0 1913.1, 986.4 1895.5 C 982.8 1877.9, 975.4 1845.5, 969.9 1823.5 C 955.0 1764.2, 953.3 1755.7, 950.5 1726.8 C 949.6 1718.1, 948.2 1707.4, 947.4 1702.9 C 945.3 1691.7, 931.2 1645.1, 925.4 1630.5 C 907.4 1583.9, 899.1 1550.3, 900.5 1529 C 901.9 1506.3, 901.6 1504.8, 893.5 1496.0 C 885.5 1487.4, 885.1 1484.3, 891.1 1474.4 C 897.6 1463.7, 898.0 1461.3, 899.0 1433 C 900.3 1396.4, 899.6 1399.5, 915.2 1359.8 C 931.3 1318.9, 934.4 1313.0, 941.6 1309.8 C 950.3 1305.9, 959.2 1310.1, 968.7 1322.7 C 977.1 1333.6, 982.9 1338.7, 998.7 1348.9 C 1027.0 1367.3, 1028.6 1369.1, 1043.9 1401.8 C 1049.7 1414.2, 1062.3 1422.6, 1081.1 1426.5 C 1092.3 1428.8, 1096.5 1431.4, 1103.8 1440.5 C 1117.0 1457.1, 1124.7 1463.4, 1142.5 1472.0 C 1151.6 1476.5, 1156.3 1479.5, 1162.3 1484.9 C 1172.4 1493.8, 1174.8 1494.9, 1196.2 1500.4 C 1218.2 1506.0, 1222.4 1506.5, 1232.2 1504.6 C 1244.2 1502.2, 1249.0 1499.3, 1262.5 1486.0 C 1269.1 1479.5, 1277.1 1472.3, 1280.2 1470.0 C 1283.4 1467.7, 1288.7 1462.6, 1291.9 1458.6 C 1299.3 1449.7, 1303.4 1446.5, 1316.8 1439.5 C 1333.7 1430.7, 1341.3 1423.4, 1350.5 1406.8 C 1353.2 1401.9, 1356.9 1396.1, 1358.7 1393.9 C 1363.4 1388.3, 1383.9 1375.0, 1400.8 1366.5 C 1414.2 1359.8, 1423.4 1354.6, 1459 1334.0 C 1474.7 1324.8, 1475.7 1324.1, 1485.4 1315.1 C 1495.2 1305.9, 1500.6 1303.2, 1506.0 1304.9 C 1510.0 1306.0, 1514.9 1310.9, 1515.0 1313.8 C 1515.0 1314.7, 1515.1 1319.8, 1515.2 1325.0 L 1515.5 1334.6 1523.4 1347.8 C 1533.2 1364.1, 1535.5 1366.5, 1541.2 1366.1 C 1545.2 1365.8, 1545.4 1363.2, 1546.0 1318 L 1546.6 1274.5 1554.3 1239 C 1558.5 1219.4, 1562.6 1200.6, 1563.5 1197.1 C 1564.6 1192.3, 1566.8 1188.0, 1572.3 1179.6 C 1581.5 1165.7, 1581.2 1166.3, 1585.4 1153.3 C 1599.1 1111.0, 1584.5 1060.6, 1554 1045.0 C 1549.1 1042.5, 1547.2 1040.1, 1546.1 1035.0 C 1544.4 1027.6, 1541.0 1026.2, 1535.7 1030.8 C 1529.7 1036.0, 1529.4 1036.1, 1494.1 1037.7 C 1462.9 1039.1, 1459.5 1039.1, 1447 1037.5 C 1439.5 1036.6, 1431.6 1035.6, 1429.3 1035.3 C 1421.8 1034.5, 1418.5 1030.5, 1399.4 999 C 1380.7 968.1, 1379.8 966.1, 1382.4 961.0 C 1384.2 957.6, 1387.6 956.4, 1398 955.5 C 1423.6 953.2, 1446.9 944.3, 1460.9 931.3 C 1472.3 920.8, 1477.5 910.6, 1481.4 891.5 C 1484.1 878.3, 1485.6 875.1, 1494.9 863.4 C 1504.0 852.0, 1507.4 844.8, 1510.0 831.8 C 1514.3 810.7, 1525.0 801.0, 1542.3 802.6 C 1556.9 803.9, 1749.3 831.1, 1757 832.9 C 1761.6 834.0, 1774.2 836.6, 1784.9 838.5 C 1814.7 844.0, 1814.2 843.6, 1813.0 864 C 1812.4 875.5, 1812.1 876.9, 1809.1 882.5 C 1802.9 893.8, 1807.2 903.5, 1818.5 903.5 C 1829.3 903.5, 1833.3 895.2, 1828.5 882.7 C 1826.4 877.1, 1826.0 874.3, 1826.0 866.7 C 1826.1 849.1, 1828.6 846.6, 1843.9 849.4 C 1867.4 853.6, 1867.4 853.7, 1867.1 871.8 C 1866.9 884.1, 1866.8 884.7, 1863.3 891.8 C 1858.9 900.8, 1859.0 905.5, 1863.9 910.4 C 1868.3 914.8, 1876.3 914.9, 1880.9 910.5 C 1885.4 906.2, 1885.8 902.0, 1882.5 892.7 C 1879.1 883.3, 1879.0 866.6, 1882.2 861.6 C 1886.1 855.7, 1891.9 858.5, 1898.8 869.6 C 1909.8 887.2, 1931.1 893.6, 1949.1 884.7 C 1980.5 869.2, 1980.8 823.6, 1949.6 808.5 C 1941.5 804.6, 1926.3 801.3, 1918.5 801.9 C 1907.8 802.5, 1903.2 802.3, 1897 800.7 C 1893.4 799.8, 1886.9 798.3, 1882.5 797.5 C 1872.4 795.6, 1869.4 792.9, 1870.3 786.5 C 1871.2 779.8, 1875.6 768.1, 1878.6 764.3 C 1885.4 755.7, 1885.5 755.6, 1885.5 750.2 C 1885.5 742.6, 1881.3 738.5, 1873.5 738.5 C 1868.6 738.5, 1867.6 738.8, 1864.7 741.7 L 1861.5 745.0 1861.4 756.7 C 1861.3 777.2, 1855.1 791, 1846.2 791 C 1841.0 791, 1821.7 787.4, 1819.1 786.0 C 1813.1 782.8, 1817.4 763.5, 1826.5 752.8 C 1833.2 744.9, 1833.6 737.9, 1827.8 732.3 C 1823.3 728, 1815.3 728.1, 1810.7 732.7 L 1807.5 736.0 1807.4 747.2 C 1807.4 756.7, 1806.9 759.8, 1804.5 767.4 C 1800.1 781.5, 1797.0 783.5, 1783.8 780.9 C 1780.9 780.3, 1774.2 779.6, 1769 779.4 C 1758.9 779.1, 1553.3 737.2, 1540.5 732.9 C 1537.2 731.8, 1532.7 730.9, 1530.5 730.9 C 1525.5 730.9, 1518.4 729.0, 1510.0 725.5 C 1506.1 723.8, 1500.5 722.5, 1495.4 721.9 C 1477.6 720.1, 1475.1 718.7, 1465.2 704.7 C 1433.4 660.1, 1384.1 631.4, 1317.0 618.8 C 1301.2 615.9, 1267.7 615.1, 1249.9 617.4 C 1230.5 619.9, 1215.8 618.6, 1204.1 613.4 C 1199.5 611.5, 1193.3 609.3, 1190.1 608.8 C 1172.1 605.4, 1170.0 603.7, 1161.2 585.8 C 1157.8 579.0, 1151.6 567.6, 1147.4 560.5 C 1134.4 538.5, 1109.4 489.3, 1105.5 478.0 C 1103.5 472.2, 1100.5 465.0, 1098.8 462.0 C 1097.1 458.9, 1093.6 452.6, 1091.0 448 C 1088.4 443.3, 1084.2 436.3, 1081.6 432.5 C 1070.4 415.8, 1045.5 360.8, 1043.0 347.4 C 1041.2 338.0, 1040.6 336.7, 1034.5 327.5 C 1023.7 311.3, 1015.8 294.0, 1007.5 268.2 C 1001.1 248.7, 997.1 246.4, 978.7 251.6 C 958.8 257.3, 954.6 262.5, 960.4 274.5 C 965.5 284.8, 970.8 286.0, 980.7 279.0 C 989.7 272.5, 996.9 274.1, 1001.9 283.8 C 1004.2 288.4, 1011.4 311.5, 1013.0 319.3 C 1014.2 325.6, 1024.2 345.9, 1031.6 357.1 C 1034.0 360.8, 1038.1 368.5, 1040.6 374.1 C 1043.1 379.8, 1046.9 388.3, 1048.9 393 C 1051.0 397.6, 1054.3 404.8, 1056.2 409.0 C 1058.2 413.1, 1060.7 420.1, 1061.8 424.5 C 1065.8 440.1, 1070.7 451.7, 1079.4 465.9 C 1084.0 473.6, 1089.2 482.5, 1090.9 485.8 C 1092.6 489.2, 1096.0 495.0, 1098.4 498.8 C 1100.9 502.6, 1107.1 514.2, 1112.3 524.6 C 1117.4 535.0, 1122.8 545.7, 1124.3 548.5 C 1127.0 553.7, 1135.5 571.6, 1140.8 583.3 C 1142.5 587.0, 1144.8 591.3, 1145.8 592.8 C 1148.5 596.5, 1167.6 634.6, 1172.5 645.8 C 1174.7 650.9, 1180.0 661.9, 1184.3 670.3 C 1188.6 678.6, 1193.3 688.2, 1194.7 691.5 C 1196.2 694.8, 1200.5 703.5, 1204.3 711 C 1237.4 775.8, 1253.7 807.3, 1256.5 812 C 1258.3 815.0, 1263.5 824.7, 1268.2 833.5 C 1272.8 842.3, 1280.7 857.1, 1285.6 866.5 C 1307.1 906.8, 1318.9 930.1, 1318.9 931.7 C 1318.9 935.2, 1317.4 936.3, 1313.1 935.7 C 1304.5 934.5, 1303.1 932.7, 1284.2 897 C 1277.1 883.5, 1268.8 868.4, 1266 863.5 C 1263.1 858.5, 1253.0 839.6, 1243.7 821.5 C 1234.4 803.3, 1225.9 787.1, 1224.9 785.3 C 1223.8 783.6, 1217.9 772.2, 1211.7 759.8 C 1199.9 736.7, 1180.8 700.9, 1176.4 693.8 C 1175.0 691.6, 1172.3 686.6, 1170.4 682.6 C 1168.5 678.7, 1164.8 671.6, 1162.1 667 C 1150.6 647.2, 1149.9 646.5, 1135.0 643.8 C 1087.1 635.1, 1087.6 635.2, 1081.1 623.1 C 1076.1 613.7, 1071.3 611.8, 1064.9 616.5 C 1056.7 622.7, 1053.2 621.9, 1042.1 611.5 C 1032.2 602.3, 1024.5 597.1, 1009.7 589.7 C 1001.3 585.5, 996.7 582.5, 994.1 579.6 C 981.3 565.4, 978.1 564.0, 961.0 566.1 C 944.4 568.1, 937.9 567.8, 927.5 564.7 C 920.1 562.5, 916.7 562.0, 909 562.1 C 897.8 562.3, 892.3 560.6, 881.3 553.4 C 873.5 548.3, 858.3 543.1, 842.2 540.0 C 826.4 537.0, 824.7 535.5, 821.1 521.0 C 817.7 507.5, 817.8 506.7, 825.8 499.0 C 834.4 490.8, 835.6 487.7, 833.9 477.9 C 831.8 465.1, 836.6 459.3, 854.1 453.9 C 866.1 450.2, 871.4 446.4, 875.2 439.0 C 879.7 430.1, 877.8 420.5, 869.6 411.2 C 867.3 408.6, 863.1 403.6, 860.4 400.1 C 857.7 396.6, 853.9 391.9, 852.1 389.6 C 850.3 387.3, 847.2 382.5, 845.2 379 C 843.2 375.4, 839.4 369.4, 836.6 365.6 C 833.9 361.8, 829.4 354.5, 826.8 349.3 C 821.0 338.1, 820.6 333.6, 824.5 324.1 C 826.3 319.6, 827 316.2, 827 310.9 C 827 302.5, 828.4 298.9, 834.6 292.0 C 838.4 287.8, 841 283.4, 841 281.0 C 841 280.6, 838.7 276.9, 836.0 272.9 C 829.4 263.2, 828.2 259.0, 827.6 243.5 C 827.1 230.6, 826.9 229.6, 820.4 207.4 C 819.4 203.9, 817.2 200.3, 813.4 195.9 C 807.7 189.3, 804.2 183.5, 802.0 176.6 C 801.2 174.2, 798.0 170.1, 793.1 165.1 C 787.4 159.5, 785.0 156.3, 784.0 153 C 780.6 142.1, 777.5 138.4, 767.7 133.6 C 753.7 126.8, 751.7 118.4, 763.7 117.0 C 773.3 115.8, 772.1 110.7, 759.1 97.9 C 750.2 89.2, 730.1 74.2, 715.1 65.1 C 708.9 61.4, 678.6 47.9, 670.0 45.0 C 639.7 34.9, 587.5 29.5, 554 32.9" fill-rule="evenodd" fill="#000"/></g></mask>
+<symbol id="sol-arch1" viewBox="0 0 1000 1300"><path d="M40 1300 L40 500 A460 460 0 0 1 960 500 L960 1300 Z" mask="url(#archknock)"/></symbol>
+<symbol id="sol-sil" viewBox="0 0 2060 2090"><path d="M 554 32.9 C 550.4 33.3, 543.4 34.2, 538.5 34.9 C 533.5 35.6, 523.0 37.0, 515.2 38.1 C 499.5 40.2, 489.8 42.9, 474 49.6 C 451.6 59.0, 421.5 86.5, 403.3 114.1 C 394.1 128.0, 389.1 128.4, 372 116.4 C 352.0 102.5, 345.0 100.4, 321.9 101.6 C 300.6 102.8, 298.2 103.8, 282.1 119.4 C 271.6 129.6, 270.4 131.2, 265.8 140.6 C 260.2 152.2, 247 191.4, 247 196.4 C 247 198.2, 246.0 203.2, 244.9 207.5 C 243.7 211.9, 242.0 219.3, 241.0 224 C 240.0 228.6, 238.2 235.2, 237.1 238.7 C 234.2 247.2, 234.3 256.7, 237.4 266.6 C 238.7 270.9, 240.3 277.2, 241.0 280.5 C 244.7 299.0, 258.8 322.8, 269.4 328.2 C 274.4 330.7, 287.9 333.9, 293.9 333.9 C 299.1 334.0, 310.5 330.9, 318.5 327.4 C 325.9 324.1, 330.9 324.2, 334.0 327.5 C 336.3 330.0, 336.5 330.8, 336.5 342.3 C 336.6 359.0, 338.5 365.6, 346.5 377.5 C 349.9 382.7, 353.6 389.0, 354.6 391.5 C 355.6 394.1, 362.1 407.5, 369.0 421.3 C 376.0 435.2, 384.4 452.1, 387.8 459 C 391.3 465.8, 395.3 473.9, 396.8 477 C 399.1 481.5, 401.2 483.7, 409.2 489.7 C 420.3 498.0, 422.5 500.7, 427.0 511 C 434.1 527.2, 431.2 564.9, 422.2 572.0 C 418.7 574.7, 411.8 574.5, 404.1 571.5 C 394.8 567.7, 389.6 568.4, 384.2 574.1 C 378.6 580.2, 375.6 596.1, 376.6 614.9 C 377.7 637.2, 375.4 640.7, 353.3 649.7 C 339.9 655.1, 336.2 656.1, 321.8 657.9 C 316.9 658.5, 305.2 661.4, 295.3 664.5 C 285.5 667.5, 273.6 670.7, 269 671.6 C 249.9 675.1, 242.0 677.3, 232 681.9 C 226.2 684.6, 218.5 688.0, 215 689.5 C 204.6 693.8, 185.5 703.6, 178.2 708.3 C 168.2 714.8, 162.6 721.5, 158.6 732 C 157.6 734.4, 153.5 742.1, 149.4 749 C 137.2 769.6, 127.2 792.0, 124.7 804.3 L 122.5 814.7 125.4 827.6 C 127.0 834.7, 128.6 845.4, 129.0 851.5 C 129.4 857.5, 130.7 866.9, 131.8 872.3 C 133.0 877.7, 134.4 885.1, 135.0 888.8 C 135.5 892.4, 137.4 901.8, 139.1 909.5 C 141.7 921.5, 142.0 924.5, 141.4 931 C 139.9 945.3, 140.3 947.5, 146.2 962 C 149.2 969.4, 152.3 977.3, 153.0 979.5 C 153.7 981.7, 155.5 986.0, 157.0 989.0 C 158.6 992.1, 162.1 1001.8, 165.0 1010.5 C 167.8 1019.3, 171.2 1029.4, 172.5 1033 C 175.0 1039.6, 178.5 1051.6, 181.5 1063 C 182.4 1066.5, 185.5 1075.1, 188.5 1082.0 C 191.5 1088.8, 195.1 1099.0, 196.5 1104.5 C 197.9 1110.0, 200.4 1118.7, 202.0 1124 C 205.0 1133.9, 208.7 1149.4, 211.4 1164.3 C 213.5 1175.3, 216.2 1183.5, 225.5 1206.6 C 234.5 1228.8, 238.0 1240.2, 242.0 1259.2 C 246.0 1278.7, 251.2 1295.5, 260.3 1318.0 C 270.0 1342.1, 275.1 1358.6, 279.4 1379.6 C 284.6 1404.7, 292.3 1425.1, 304.8 1446.2 C 313.8 1461.5, 317.8 1470.5, 318.9 1478.5 C 323.0 1507.3, 324.3 1514.2, 327.7 1524 C 334.6 1543.8, 333.9 1546.1, 308.8 1584 C 289.1 1613.6, 284.7 1621.4, 275.9 1642.4 C 263.4 1672.0, 251.1 1694.8, 232.1 1723.2 C 198.5 1773.6, 185.9 1805.7, 174.9 1869 C 172.7 1881.9, 168.7 1901.5, 166.2 1912.5 L 161.5 1932.5 161.2 2011.2 L 160.9 2090 578.5 2090 L 996.0 2090 995.7 2012.2 C 995.5 1953.9, 995.1 1933.6, 994.2 1931 C 993.5 1929.0, 990.0 1913.1, 986.4 1895.5 C 982.8 1877.9, 975.4 1845.5, 969.9 1823.5 C 955.0 1764.2, 953.3 1755.7, 950.5 1726.8 C 949.6 1718.1, 948.2 1707.4, 947.4 1702.9 C 945.3 1691.7, 931.2 1645.1, 925.4 1630.5 C 907.4 1583.9, 899.1 1550.3, 900.5 1529 C 901.9 1506.3, 901.6 1504.8, 893.5 1496.0 C 885.5 1487.4, 885.1 1484.3, 891.1 1474.4 C 897.6 1463.7, 898.0 1461.3, 899.0 1433 C 900.3 1396.4, 899.6 1399.5, 915.2 1359.8 C 931.3 1318.9, 934.4 1313.0, 941.6 1309.8 C 950.3 1305.9, 959.2 1310.1, 968.7 1322.7 C 977.1 1333.6, 982.9 1338.7, 998.7 1348.9 C 1027.0 1367.3, 1028.6 1369.1, 1043.9 1401.8 C 1049.7 1414.2, 1062.3 1422.6, 1081.1 1426.5 C 1092.3 1428.8, 1096.5 1431.4, 1103.8 1440.5 C 1117.0 1457.1, 1124.7 1463.4, 1142.5 1472.0 C 1151.6 1476.5, 1156.3 1479.5, 1162.3 1484.9 C 1172.4 1493.8, 1174.8 1494.9, 1196.2 1500.4 C 1218.2 1506.0, 1222.4 1506.5, 1232.2 1504.6 C 1244.2 1502.2, 1249.0 1499.3, 1262.5 1486.0 C 1269.1 1479.5, 1277.1 1472.3, 1280.2 1470.0 C 1283.4 1467.7, 1288.7 1462.6, 1291.9 1458.6 C 1299.3 1449.7, 1303.4 1446.5, 1316.8 1439.5 C 1333.7 1430.7, 1341.3 1423.4, 1350.5 1406.8 C 1353.2 1401.9, 1356.9 1396.1, 1358.7 1393.9 C 1363.4 1388.3, 1383.9 1375.0, 1400.8 1366.5 C 1414.2 1359.8, 1423.4 1354.6, 1459 1334.0 C 1474.7 1324.8, 1475.7 1324.1, 1485.4 1315.1 C 1495.2 1305.9, 1500.6 1303.2, 1506.0 1304.9 C 1510.0 1306.0, 1514.9 1310.9, 1515.0 1313.8 C 1515.0 1314.7, 1515.1 1319.8, 1515.2 1325.0 L 1515.5 1334.6 1523.4 1347.8 C 1533.2 1364.1, 1535.5 1366.5, 1541.2 1366.1 C 1545.2 1365.8, 1545.4 1363.2, 1546.0 1318 L 1546.6 1274.5 1554.3 1239 C 1558.5 1219.4, 1562.6 1200.6, 1563.5 1197.1 C 1564.6 1192.3, 1566.8 1188.0, 1572.3 1179.6 C 1581.5 1165.7, 1581.2 1166.3, 1585.4 1153.3 C 1599.1 1111.0, 1584.5 1060.6, 1554 1045.0 C 1549.1 1042.5, 1547.2 1040.1, 1546.1 1035.0 C 1544.4 1027.6, 1541.0 1026.2, 1535.7 1030.8 C 1529.7 1036.0, 1529.4 1036.1, 1494.1 1037.7 C 1462.9 1039.1, 1459.5 1039.1, 1447 1037.5 C 1439.5 1036.6, 1431.6 1035.6, 1429.3 1035.3 C 1421.8 1034.5, 1418.5 1030.5, 1399.4 999 C 1380.7 968.1, 1379.8 966.1, 1382.4 961.0 C 1384.2 957.6, 1387.6 956.4, 1398 955.5 C 1423.6 953.2, 1446.9 944.3, 1460.9 931.3 C 1472.3 920.8, 1477.5 910.6, 1481.4 891.5 C 1484.1 878.3, 1485.6 875.1, 1494.9 863.4 C 1504.0 852.0, 1507.4 844.8, 1510.0 831.8 C 1514.3 810.7, 1525.0 801.0, 1542.3 802.6 C 1556.9 803.9, 1749.3 831.1, 1757 832.9 C 1761.6 834.0, 1774.2 836.6, 1784.9 838.5 C 1814.7 844.0, 1814.2 843.6, 1813.0 864 C 1812.4 875.5, 1812.1 876.9, 1809.1 882.5 C 1802.9 893.8, 1807.2 903.5, 1818.5 903.5 C 1829.3 903.5, 1833.3 895.2, 1828.5 882.7 C 1826.4 877.1, 1826.0 874.3, 1826.0 866.7 C 1826.1 849.1, 1828.6 846.6, 1843.9 849.4 C 1867.4 853.6, 1867.4 853.7, 1867.1 871.8 C 1866.9 884.1, 1866.8 884.7, 1863.3 891.8 C 1858.9 900.8, 1859.0 905.5, 1863.9 910.4 C 1868.3 914.8, 1876.3 914.9, 1880.9 910.5 C 1885.4 906.2, 1885.8 902.0, 1882.5 892.7 C 1879.1 883.3, 1879.0 866.6, 1882.2 861.6 C 1886.1 855.7, 1891.9 858.5, 1898.8 869.6 C 1909.8 887.2, 1931.1 893.6, 1949.1 884.7 C 1980.5 869.2, 1980.8 823.6, 1949.6 808.5 C 1941.5 804.6, 1926.3 801.3, 1918.5 801.9 C 1907.8 802.5, 1903.2 802.3, 1897 800.7 C 1893.4 799.8, 1886.9 798.3, 1882.5 797.5 C 1872.4 795.6, 1869.4 792.9, 1870.3 786.5 C 1871.2 779.8, 1875.6 768.1, 1878.6 764.3 C 1885.4 755.7, 1885.5 755.6, 1885.5 750.2 C 1885.5 742.6, 1881.3 738.5, 1873.5 738.5 C 1868.6 738.5, 1867.6 738.8, 1864.7 741.7 L 1861.5 745.0 1861.4 756.7 C 1861.3 777.2, 1855.1 791, 1846.2 791 C 1841.0 791, 1821.7 787.4, 1819.1 786.0 C 1813.1 782.8, 1817.4 763.5, 1826.5 752.8 C 1833.2 744.9, 1833.6 737.9, 1827.8 732.3 C 1823.3 728, 1815.3 728.1, 1810.7 732.7 L 1807.5 736.0 1807.4 747.2 C 1807.4 756.7, 1806.9 759.8, 1804.5 767.4 C 1800.1 781.5, 1797.0 783.5, 1783.8 780.9 C 1780.9 780.3, 1774.2 779.6, 1769 779.4 C 1758.9 779.1, 1553.3 737.2, 1540.5 732.9 C 1537.2 731.8, 1532.7 730.9, 1530.5 730.9 C 1525.5 730.9, 1518.4 729.0, 1510.0 725.5 C 1506.1 723.8, 1500.5 722.5, 1495.4 721.9 C 1477.6 720.1, 1475.1 718.7, 1465.2 704.7 C 1433.4 660.1, 1384.1 631.4, 1317.0 618.8 C 1301.2 615.9, 1267.7 615.1, 1249.9 617.4 C 1230.5 619.9, 1215.8 618.6, 1204.1 613.4 C 1199.5 611.5, 1193.3 609.3, 1190.1 608.8 C 1172.1 605.4, 1170.0 603.7, 1161.2 585.8 C 1157.8 579.0, 1151.6 567.6, 1147.4 560.5 C 1134.4 538.5, 1109.4 489.3, 1105.5 478.0 C 1103.5 472.2, 1100.5 465.0, 1098.8 462.0 C 1097.1 458.9, 1093.6 452.6, 1091.0 448 C 1088.4 443.3, 1084.2 436.3, 1081.6 432.5 C 1070.4 415.8, 1045.5 360.8, 1043.0 347.4 C 1041.2 338.0, 1040.6 336.7, 1034.5 327.5 C 1023.7 311.3, 1015.8 294.0, 1007.5 268.2 C 1001.1 248.7, 997.1 246.4, 978.7 251.6 C 958.8 257.3, 954.6 262.5, 960.4 274.5 C 965.5 284.8, 970.8 286.0, 980.7 279.0 C 989.7 272.5, 996.9 274.1, 1001.9 283.8 C 1004.2 288.4, 1011.4 311.5, 1013.0 319.3 C 1014.2 325.6, 1024.2 345.9, 1031.6 357.1 C 1034.0 360.8, 1038.1 368.5, 1040.6 374.1 C 1043.1 379.8, 1046.9 388.3, 1048.9 393 C 1051.0 397.6, 1054.3 404.8, 1056.2 409.0 C 1058.2 413.1, 1060.7 420.1, 1061.8 424.5 C 1065.8 440.1, 1070.7 451.7, 1079.4 465.9 C 1084.0 473.6, 1089.2 482.5, 1090.9 485.8 C 1092.6 489.2, 1096.0 495.0, 1098.4 498.8 C 1100.9 502.6, 1107.1 514.2, 1112.3 524.6 C 1117.4 535.0, 1122.8 545.7, 1124.3 548.5 C 1127.0 553.7, 1135.5 571.6, 1140.8 583.3 C 1142.5 587.0, 1144.8 591.3, 1145.8 592.8 C 1148.5 596.5, 1167.6 634.6, 1172.5 645.8 C 1174.7 650.9, 1180.0 661.9, 1184.3 670.3 C 1188.6 678.6, 1193.3 688.2, 1194.7 691.5 C 1196.2 694.8, 1200.5 703.5, 1204.3 711 C 1237.4 775.8, 1253.7 807.3, 1256.5 812 C 1258.3 815.0, 1263.5 824.7, 1268.2 833.5 C 1272.8 842.3, 1280.7 857.1, 1285.6 866.5 C 1307.1 906.8, 1318.9 930.1, 1318.9 931.7 C 1318.9 935.2, 1317.4 936.3, 1313.1 935.7 C 1304.5 934.5, 1303.1 932.7, 1284.2 897 C 1277.1 883.5, 1268.8 868.4, 1266 863.5 C 1263.1 858.5, 1253.0 839.6, 1243.7 821.5 C 1234.4 803.3, 1225.9 787.1, 1224.9 785.3 C 1223.8 783.6, 1217.9 772.2, 1211.7 759.8 C 1199.9 736.7, 1180.8 700.9, 1176.4 693.8 C 1175.0 691.6, 1172.3 686.6, 1170.4 682.6 C 1168.5 678.7, 1164.8 671.6, 1162.1 667 C 1150.6 647.2, 1149.9 646.5, 1135.0 643.8 C 1087.1 635.1, 1087.6 635.2, 1081.1 623.1 C 1076.1 613.7, 1071.3 611.8, 1064.9 616.5 C 1056.7 622.7, 1053.2 621.9, 1042.1 611.5 C 1032.2 602.3, 1024.5 597.1, 1009.7 589.7 C 1001.3 585.5, 996.7 582.5, 994.1 579.6 C 981.3 565.4, 978.1 564.0, 961.0 566.1 C 944.4 568.1, 937.9 567.8, 927.5 564.7 C 920.1 562.5, 916.7 562.0, 909 562.1 C 897.8 562.3, 892.3 560.6, 881.3 553.4 C 873.5 548.3, 858.3 543.1, 842.2 540.0 C 826.4 537.0, 824.7 535.5, 821.1 521.0 C 817.7 507.5, 817.8 506.7, 825.8 499.0 C 834.4 490.8, 835.6 487.7, 833.9 477.9 C 831.8 465.1, 836.6 459.3, 854.1 453.9 C 866.1 450.2, 871.4 446.4, 875.2 439.0 C 879.7 430.1, 877.8 420.5, 869.6 411.2 C 867.3 408.6, 863.1 403.6, 860.4 400.1 C 857.7 396.6, 853.9 391.9, 852.1 389.6 C 850.3 387.3, 847.2 382.5, 845.2 379 C 843.2 375.4, 839.4 369.4, 836.6 365.6 C 833.9 361.8, 829.4 354.5, 826.8 349.3 C 821.0 338.1, 820.6 333.6, 824.5 324.1 C 826.3 319.6, 827 316.2, 827 310.9 C 827 302.5, 828.4 298.9, 834.6 292.0 C 838.4 287.8, 841 283.4, 841 281.0 C 841 280.6, 838.7 276.9, 836.0 272.9 C 829.4 263.2, 828.2 259.0, 827.6 243.5 C 827.1 230.6, 826.9 229.6, 820.4 207.4 C 819.4 203.9, 817.2 200.3, 813.4 195.9 C 807.7 189.3, 804.2 183.5, 802.0 176.6 C 801.2 174.2, 798.0 170.1, 793.1 165.1 C 787.4 159.5, 785.0 156.3, 784.0 153 C 780.6 142.1, 777.5 138.4, 767.7 133.6 C 753.7 126.8, 751.7 118.4, 763.7 117.0 C 773.3 115.8, 772.1 110.7, 759.1 97.9 C 750.2 89.2, 730.1 74.2, 715.1 65.1 C 708.9 61.4, 678.6 47.9, 670.0 45.0 C 639.7 34.9, 587.5 29.5, 554 32.9" fill-rule="evenodd"/></symbol>
+</svg>
+
+<header class="cover">
+  <div class="cover__l">
+    <div class="cover__top"><span>Brand book</span><span>Edition two · October 2026</span></div>
+    <div class="cover__mark">
+      <svg class="u e" style="aspect-ratio:1000/1300;--sil:var(--night)" role="img" aria-label="Claire's silhouette in an arch of light"><use href="#sol-arch"/></svg>
+      <svg style="aspect-ratio:614/130" class="u w" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+      <p class="sub">Claire Gaxiola · Violinist</p>
+    </div>
+    <div class="cover__foot"><span>Weddings · Galas · Sacred</span><span>The Southeast</span></div>
+  </div>
+  <div class="cover__r"><img src="img/hero.jpg" alt="Claire Gaxiola playing violin in a black lace dress, warm lights behind her" width="1000" height="1500"></div>
+</header>
+
+<section class="band" aria-label="Contents">
+  <div class="wrap">
+    <p class="label" style="margin-bottom:22px">Programme</p>
+    <nav class="toc">
+      <a href="#overture"><span>I</span><b>Overture</b></a>
+      <a href="#notes"><span>II</span><b>Programme notes</b></a>
+      <a href="#theme"><span>III</span><b>Theme</b></a>
+      <a href="#variations"><span>IV</span><b>Variations</b></a>
+      <a href="#colour"><span>V</span><b>Tone colour</b></a>
+      <a href="#engraving"><span>VI</span><b>Engraving</b></a>
+      <a href="#light"><span>VII</span><b>Light</b></a>
+      <a href="#words"><span>VIII</span><b>Words</b></a>
+      <a href="#performances"><span>IX</span><b>Performances</b></a>
+      <a href="#coda"><span>Coda</span><b>The kit</b></a>
+    </nav>
+  </div>
+</section>
+
+<section class="band" id="overture" style="padding-top:0">
+  <div class="wrap">
+    <div class="mvt"><span class="no">I</span><h2>Overture</h2><p class="tempo">Adagio · the idea in one breath</p></div>
+    <div class="cols">
+      <div class="c-7"><p class="lede">Before anyone hears her, they see her: one figure, a violin, and the light coming in behind.</p></div>
+      <div class="c-5 prose" style="align-self:end">
+        <p>Strings of Light is one woman and one violin. There is no ensemble or agency behind her, and no stock playlist. Couples are buying a person: a trained musician who chooses every piece with them and plays it live, close enough to see.</p>
+        <p>So the mark is Claire herself, standing in the light her name promises.</p>
+      </div>
+    </div>
+    <div class="cols" style="margin-top:clamp(56px,8vw,96px);align-items:center">
+      <div class="c-5"><div class="plate p-night" style="aspect-ratio:4/5"><svg class="u" style="aspect-ratio:1000/1300;width:58%" role="img" aria-label="The emblem: Claire in an arch of light"><use href="#sol-arch"/></svg></div></div>
+      <div class="c-7 prose">
+        <p class="label" style="margin-bottom:12px">The emblem</p>
+        <p style="font-size:24px;line-height:1.4;font-style:italic">Claire's own silhouette, traced from a photograph of her playing: the bun, the profile, the raised bow. Not a stock violinist.</p>
+        <p style="margin-top:20px">She stands in an arch, the shape from her first graphics and the door of every chapel she plays in. Behind her the sky moves from night violet to gold, sampled from the photographs she chose as her inspiration: light breaking through dark cloud, violet night skies, gold at dusk.</p>
+      </div>
+    </div>
+    <div class="trio">
+      <div><div class="chip"><img src="img/bokeh.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%"></div><h3>The light</h3><p>Low, warm, breaking through darkness. Every piece has one source of it.</p></div>
+      <div><div class="chip"><img src="img/full.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%"></div><h3>The figure</h3><p>Claire, always playing. The silhouette comes from this photograph.</p></div>
+      <div><div class="chip"><img src="img/chapel.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%"></div><h3>The arch</h3><p>A window, a chapel door. The frame that lets the light in.</p></div>
+    </div>
+    <div class="tag">
+      <p class="small">The line</p>
+      <p class="big">A moment, held.</p>
+      <p class="muted" style="max-width:44ch;font-size:18px">Three words that work on a business card, at the end of a reel and under a bride's first look. Always with its full stop.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="notes">
+  <div class="wrap">
+    <div class="mvt"><span class="no">II</span><h2>Programme notes</h2><p class="tempo">Andante · who it is for, and what it promises</p></div>
+    <div class="aud">
+      <div><p class="label">Couples</p><h3>The ceremony</h3><p>They want the walk down the aisle to feel like theirs. They need taste they can trust, songs they love played beautifully, and one person who answers.</p></div>
+      <div><p class="label">Planners</p><h3>The run of show</h3><p>They need someone who arrives early, brings her own sound, knows the order of service and never needs chasing.</p></div>
+      <div><p class="label">Churches</p><h3>The service</h3><p>Sacred repertoire, played with reverence, sensitive to liturgy and to grief. For memorials, music that asks for nothing.</p></div>
+      <div><p class="label">Hosts</p><h3>The evening</h3><p>Galas, dinners and receptions that want elegance in the background and one featured moment in the programme.</p></div>
+    </div>
+    <p class="stmt">For couples and planners across the Southeast, Strings of Light is the violinist who <em>chooses every piece with you</em>, plays it live, and takes care of the music from the first call to the last note. Contemporary, sacred and classical.</p>
+    <div class="traits">
+      <div><h3>Luminous</h3><p class="not">Not flashy</p><p class="d">Warm light, deep colour, never glitter or neon.</p></div>
+      <div><h3>Devoted</h3><p class="not">Not preachy</p><p class="d">Faith is felt in the light and the repertoire, never used as decoration.</p></div>
+      <div><h3>Warm</h3><p class="not">Not casual</p><p class="d">Speaks to people directly and kindly, with manners.</p></div>
+      <div><h3>Exacting</h3><p class="not">Not stiff</p><p class="d">Conservatory standards, worn lightly. Every detail is finished.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="theme">
+  <div class="wrap">
+    <div class="mvt"><span class="no">III</span><h2>Theme</h2><p class="tempo">Cantabile · the primary lockup</p></div>
+    <div class="plate p-dawn">
+      <div class="lock">
+        <svg class="u" style="aspect-ratio:1000/1300;width:clamp(110px,13vw,170px)" role="img" aria-label="Emblem"><use href="#sol-arch"/></svg>
+        <svg class="u" style="aspect-ratio:614/130;width:min(560px,84%)" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+        <p class="s" style="font-size:clamp(11px,1.4vw,15px)">Claire Gaxiola · Violinist</p>
+      </div>
+      <span class="cap">Primary · on dawn</span>
+    </div>
+    <ol class="anat">
+      <li><span>The emblem</span>Claire in an arch of light. The sky is always the full brand gradient, night at the top, gold at her feet.</li>
+      <li><span>The signature</span>Strings of Light in a copperplate script, converted to outlines and spaced by hand. A drawing, never typed.</li>
+      <li><span>The credit</span>Her name and craft in EB Garamond capitals, widely spaced, as a programme credits the soloist.</li>
+    </ol>
+    <div class="grid2" style="margin-top:48px">
+      <div class="plate p-night">
+        <div class="lock">
+          <svg class="u" style="aspect-ratio:1000/1300;width:clamp(80px,9vw,120px)" aria-hidden="true"><use href="#sol-arch"/></svg>
+          <svg class="u" style="aspect-ratio:614/130;width:76%" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+          <p class="s" style="font-size:clamp(9px,1.1vw,12px)">Claire Gaxiola · Violinist</p>
+        </div>
+        <span class="cap">Reversed · on night</span>
+      </div>
+      <div class="plate p-tempest">
+        <div class="lock">
+          <svg class="u" style="aspect-ratio:1000/1300;width:clamp(80px,9vw,120px)" aria-hidden="true"><use href="#sol-arch"/></svg>
+          <svg class="u" style="aspect-ratio:614/130;width:76%" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+          <p class="s" style="font-size:clamp(9px,1.1vw,12px)">Claire Gaxiola · Violinist</p>
+        </div>
+        <span class="cap">Reversed · on tempest</span>
+      </div>
+    </div>
+    <div class="note">
+      <div><b>Clear space</b>Keep half the arch's width free on every side. Nothing enters it: not text, not an edge, not a photograph's subject.</div>
+      <div><b>Minimum size</b>Primary lockup 40 mm / 170 px wide. Below that use the horizontal lockup; the emblem alone holds down to 16 px.</div>
+      <div><b>Silhouette colour</b>The silhouette always matches the ground it sits on, so on night it seems to step out of the dark. On dawn it is night.</div>
+    </div>
+  </div>
+</section>
+
+<section class="band cloud" id="variations">
+  <div class="wrap">
+    <div class="mvt"><span class="no">IV</span><h2>Variations</h2><p class="tempo">Con moto · the family, from a website header to a gold-foil stamp</p></div>
+    <div class="plate p-dawn" style="padding:clamp(40px,6vw,80px) 24px">
+      <div style="display:flex;align-items:center;gap:clamp(16px,3vw,32px);flex-wrap:wrap;justify-content:center">
+        <svg class="u" style="aspect-ratio:1000/1300;width:clamp(56px,6vw,74px)" aria-hidden="true"><use href="#sol-arch"/></svg>
+        <div><svg class="u" style="aspect-ratio:614/130;width:min(380px,70vw)" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+        <p style="margin-top:10px;font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--vesper-dk)">Claire Gaxiola · Violinist</p></div>
+      </div>
+      <span class="cap">Horizontal · headers, email, invoices</span>
+    </div>
+    <div class="grid3" style="margin-top:20px">
+      <div class="plate p-night" style="aspect-ratio:1"><svg class="u" style="aspect-ratio:1000/1300;width:42%" role="img" aria-label="Emblem"><use href="#sol-arch"/></svg><span class="cap">Emblem</span></div>
+      <div class="plate p-night" style="aspect-ratio:1"><svg class="u" style="aspect-ratio:1000/1300;width:42%;color:var(--halo)" role="img" aria-label="One-colour emblem"><use href="#sol-arch1"/></svg><span class="cap">One colour · gold foil, engraving</span></div>
+      <div class="plate p-dawn" style="aspect-ratio:1"><svg class="u" style="aspect-ratio:1000/1300;width:42%;color:var(--night)" role="img" aria-label="One-colour emblem"><use href="#sol-arch1"/></svg><span class="cap">One colour · stamps, embossing</span></div>
+    </div>
+    <div class="grid3" style="margin-top:20px">
+      <div class="plate p-dawn" style="aspect-ratio:1"><img src="img/profile.png" alt="Instagram profile picture: Claire's silhouette against the sky in a circle" style="width:62%;aspect-ratio:1;border-radius:50%"><span class="cap">Instagram profile picture</span></div>
+      <div class="plate p-dawn" style="aspect-ratio:1"><div style="display:flex;align-items:flex-end;gap:22px">
+        <svg class="u" style="aspect-ratio:1000/1300;width:88px" aria-hidden="true"><use href="#sol-arch"/></svg>
+        <svg class="u" style="aspect-ratio:1000/1300;width:44px" aria-hidden="true"><use href="#sol-arch"/></svg>
+        <svg class="u" style="aspect-ratio:1000/1300;width:24px" aria-hidden="true"><use href="#sol-arch"/></svg>
+        <svg class="u" style="aspect-ratio:1000/1300;width:16px" aria-hidden="true"><use href="#sol-arch"/></svg></div><span class="cap">Holds at 16 px</span></div>
+      <div class="plate p-halo" style="aspect-ratio:1"><svg class="u" style="aspect-ratio:614/130;width:70%;color:var(--night)" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg><span class="cap">Signature alone · on halo</span></div>
+    </div>
+    <h3 style="font-size:34px;font-style:italic;margin:64px 0 22px">Never</h3>
+    <div class="misuse">
+      <figure><div class="plate p-dawn"><p style="font-family:'Brush Script MT',cursive;font-size:42px;font-style:italic">Strings of Light</p></div><figcaption>retype the signature in any font, script or otherwise.</figcaption></figure>
+      <figure><div class="plate p-dawn"><svg class="u" style="aspect-ratio:1000/1300;width:60px;transform:scaleX(1.6)" aria-hidden="true"><use href="#sol-arch"/></svg></div><figcaption>stretch the emblem or crop the arch.</figcaption></figure>
+      <figure><div class="plate p-dawn"><div style="width:70px;aspect-ratio:1000/1300;filter:hue-rotate(150deg) saturate(1.6)"><svg class="u" style="aspect-ratio:1000/1300;width:100%" aria-hidden="true"><use href="#sol-arch"/></svg></div></div><figcaption>recolour the sky or reverse the gradient.</figcaption></figure>
+      <figure><div class="plate p-night" style="overflow:hidden"><img src="img/bokeh.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%"><svg class="u" style="aspect-ratio:614/130;width:70%;position:relative;color:var(--ink)" aria-hidden="true"><use href="#sol-word"/></svg></div><figcaption>set it over a busy or bright part of a photograph.</figcaption></figure>
+      <figure><div class="plate p-dawn"><svg class="u" style="aspect-ratio:1546/1940;width:90px" aria-hidden="true"><use href="#sol-sil"/></svg></div><figcaption>use the silhouette without its sky. The round profile picture is the one place a circle of sky replaces the arch.</figcaption></figure>
+      <figure><div class="plate p-dawn"><div style="display:flex;align-items:center;gap:8px"><span style="font-size:30px">🎻</span><svg class="u" style="aspect-ratio:614/130;width:200px" aria-hidden="true"><use href="#sol-word"/></svg><span style="font-size:26px">✨</span></div></div><figcaption>add emoji, sparkles, clip art or a drawn violin.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="colour">
+  <div class="wrap">
+    <div class="mvt"><span class="no">V</span><h2>Tone colour</h2><p class="tempo">Dolce · six colours sampled from the mood board</p></div>
+    <div class="sw">
+      <figure><div class="chip" style="background:var(--night);color:var(--dawn)"><b>Night</b></div><figcaption><p class="w">The sky after dark. Grounds, text, the silhouette.</p><dl><dt>HEX</dt><dd>#17133F</dd><dt>RGB</dt><dd>23 19 63</dd></dl></figcaption></figure>
+      <figure><div class="chip" style="background:var(--vesper);color:var(--dawn)"><b>Vesper</b></div><figcaption><p class="w">Evening prayer light. Labels, links, the upper sky.</p><dl><dt>HEX</dt><dd>#6A4FB0</dd><dt>RGB</dt><dd>106 79 176</dd></dl></figcaption></figure>
+      <figure><div class="chip" style="background:var(--ember);color:var(--night)"><b>Ember</b></div><figcaption><p class="w">Light at the cloud's edge. The middle of the sky only.</p><dl><dt>HEX</dt><dd>#E07A3A</dd><dt>RGB</dt><dd>224 122 58</dd></dl></figcaption></figure>
+      <figure><div class="chip" style="background:var(--halo);color:var(--night)"><b>Halo</b></div><figcaption><p class="w">The gold. Buttons, accents on night, foil.</p><dl><dt>HEX</dt><dd>#F2B24A</dd><dt>RGB</dt><dd>242 178 74</dd></dl></figcaption></figure>
+      <figure><div class="chip" style="background:var(--dawn);color:var(--night);box-shadow:inset 0 0 0 1px var(--rule)"><b>Dawn</b></div><figcaption><p class="w">Paper warmed by low sun. The light ground.</p><dl><dt>HEX</dt><dd>#F8EEDB</dd><dt>RGB</dt><dd>248 238 219</dd></dl></figcaption></figure>
+      <figure><div class="chip" style="background:var(--tempest);color:var(--dawn)"><b>Tempest</b></div><figcaption><p class="w">Storm cloud. A second dark, for memorials and depth.</p><dl><dt>HEX</dt><dd>#1C2B36</dd><dt>RGB</dt><dd>28 43 54</dd></dl></figcaption></figure>
+    </div>
+    <p class="mbnote">Each colour was sampled from Claire's mood board: night skies, purple cloud, amber light at a cloud's edge, gold dusk, backlit grass and light breaking through a storm.</p>
+    <div class="skyband">
+      <div class="g" role="img" aria-label="The sky gradient: night, vesper, ember, halo, dawn"></div>
+      <div class="t">
+        <h3>The sky</h3>
+        <p>The five colours together, top to bottom, are light breaking through darkness. It is the brand's one flourish.</p>
+        <ul>
+          <li>Inside the emblem, always.</li>
+          <li>One hero moment per piece: a cover, a website band, a reel's last frame.</li>
+          <li>Always vertical, night at the top and gold at the bottom, the way the sky sits.</li>
+          <li>Never behind body text.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ratio" aria-label="Proportions: dawn 45, night 35, cloud 8, vesper 6, halo 4, ember 2">
+      <span style="flex:45;background:var(--paper);box-shadow:inset 0 0 0 1px var(--rule)"></span><span style="flex:35;background:var(--night)"></span><span style="flex:8;background:var(--cloud)"></span><span style="flex:6;background:var(--vesper)"></span><span style="flex:4;background:var(--halo)"></span><span style="flex:2;background:var(--ember)"></span>
+    </div>
+    <p class="muted" style="margin-top:10px;font-size:16px">In use: dawn and night carry almost everything; the sky colours are light, so they are used the way light is, in small amounts. Cloud (#E6E0EC) is a lilac mist for second grounds.</p>
+    <div class="pairs">
+      <div style="background:var(--paper);box-shadow:inset 0 0 0 1px var(--rule)"><b>Night on dawn</b>Body text, the signature. 15.2:1</div>
+      <div style="background:var(--night);color:var(--dawn)"><b>Dawn on night</b>Reversed text. 15.2:1</div>
+      <div style="background:var(--night);color:var(--halo)"><b>Halo on night</b>Labels, buttons, accents. 9.4:1</div>
+      <div style="background:var(--paper);color:var(--vesper-dk);box-shadow:inset 0 0 0 1px var(--rule)"><b>Vesper on dawn</b>Labels in its deep tone #54398F. 7.7:1</div>
+    </div>
+    <p class="muted" style="margin-top:10px;font-size:16px">Ember and halo are never text on dawn (2.6:1 and less).</p>
+  </div>
+</section>
+
+<section class="band cloud" id="engraving">
+  <div class="wrap">
+    <div class="mvt"><span class="no">VI</span><h2>Engraving</h2><p class="tempo">Legato · one family of type, set like a concert programme</p></div>
+    <div class="spec">
+      <div class="meta"><b>Signature only</b>Pinyon Script, a copperplate hand. Lives in the logo artwork; live type only for a single short phrase (the line, a couple's names).</div>
+      <div class="show"><p style="font-family:var(--script);font-size:clamp(56px,9vw,120px);line-height:1.05">A moment, held.</p></div>
+    </div>
+    <div class="spec">
+      <div class="meta"><b>Display &amp; headlines</b>EB Garamond Italic, 400. Sentence case. The voice of the brand.</div>
+      <div class="show"><p style="font-size:clamp(40px,6vw,84px);line-height:1;font-style:italic">Is your date still open?</p></div>
+    </div>
+    <div class="spec">
+      <div class="meta"><b>Text</b>EB Garamond Roman, 400 at 17–20 px, 1.6 leading, about 62 characters a line. Old-style figures.</div>
+      <div class="show"><p style="font-size:20px;max-width:60ch">Contemporary, sacred and classical repertoire, chosen with you and played live. Ceremony music begins at $450, and every event is quoted individually after a short call.</p></div>
+    </div>
+    <div class="spec" style="border-bottom:0">
+      <div class="meta"><b>Labels &amp; credits</b>EB Garamond capitals, 13–15 px, tracked 0.3em. Deep vesper on light grounds, halo on dark.</div>
+      <div class="show"><p class="label" style="font-size:16px">Prelude · Processional · Recessional · Reception</p></div>
+    </div>
+    <div class="hier">
+      <p class="h-label">Weddings &amp; ceremonies</p>
+      <p class="h-head">Music for the walk you will remember.</p>
+      <p class="h-lede">Solo violin for ceremonies across the Southeast.</p>
+      <p class="h-body">Claire plans every selection with you, from the prelude while guests find their seats to the recessional that sends you out together. She brings her own sound, coordinates with your planner and arrives early. Ceremony music begins at $450.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="light">
+  <div class="wrap">
+    <div class="mvt"><span class="no">VII</span><h2>Light</h2><p class="tempo">Sostenuto · how Claire is photographed</p></div>
+    <div class="ph">
+      <figure style="grid-column:span 5;grid-row:span 4"><img src="img/hero.jpg" alt="Claire in profile, playing, warm lights behind" loading="lazy"><figcaption>Side light, warm ground</figcaption></figure>
+      <figure style="grid-column:span 4;grid-row:span 2"><img src="img/gaze.jpg" alt="Claire looking past the camera with the violin under her chin" loading="lazy" style="object-position:50% 30%"><figcaption>Mid-phrase, unposed</figcaption></figure>
+      <figure style="grid-column:span 3;grid-row:span 2"><img src="img/stage.jpg" alt="Claire under a single spotlight, black and white" loading="lazy" style="object-position:50% 20%"><figcaption>Stage, black &amp; white</figcaption></figure>
+      <figure style="grid-column:span 3;grid-row:span 2"><img src="img/hands.jpg" alt="Close on Claire's hands, bow and strings" loading="lazy"><figcaption>Hands and bow</figcaption></figure>
+      <figure style="grid-column:span 4;grid-row:span 2"><img src="img/full.jpg" alt="Claire full length against a white wave wall" loading="lazy" style="object-position:50% 35%"><figcaption>The emblem's photograph</figcaption></figure>
+      <figure style="grid-column:span 4;grid-row:span 3"><img src="img/golden.jpg" alt="Claire playing by lamplight in a small room" loading="lazy"><figcaption>Lamplight, small rooms</figcaption></figure>
+      <figure style="grid-column:span 4;grid-row:span 3"><img src="img/strings.jpg" alt="Close-up of the violin's strings and Claire's fingers" loading="lazy"><figcaption>The instrument, close</figcaption></figure>
+      <figure style="grid-column:span 4;grid-row:span 3"><img src="img/chapel.jpg" alt="Claire playing inside the ruins of a stone chapel" loading="lazy" style="object-position:50% 45%"><figcaption>Sacred places</figcaption></figure>
+    </div>
+    <div class="rules">
+      <div><h3>One light</h3><p>Light from one side or from behind: a window, low sun, a single spot. Let the rest fall into shadow.</p></div>
+      <div><h3>Shoot the silhouette</h3><p>At golden hour, put the sun behind her. Backlit frames are the emblem made real, and the next shoot should be built around them.</p></div>
+      <div><h3>Playing, not posing</h3><p>She is mid-phrase in the best pictures. No holding the violin like a prop.</p></div>
+      <div><h3>Warm or black &amp; white</h3><p>Grade warm toward halo, never cool or teal. Black and white for the stage and for memorials.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="words">
+  <div class="wrap">
+    <div class="mvt"><span class="no">VIII</span><h2>Words</h2><p class="tempo">Con amore · how Strings of Light speaks</p></div>
+    <div class="cols" style="margin-bottom:48px">
+      <p class="c-7" style="font-size:clamp(24px,2.6vw,32px);line-height:1.35;font-style:italic">Write the way Claire talks to a nervous bride on the phone: warmly, briefly, and with complete confidence that the day will be beautiful.</p>
+      <div class="c-5 prose muted" style="font-size:17px"><p>Short sentences. One image, not three. Speak to "you". Claire is a violinist, never a vocalist; she works across the Southeast, not one city; the repertoire is contemporary, sacred and classical, in that order. The only public price is ceremony music from $450.</p></div>
+    </div>
+    <div class="say">
+      <div><p class="k">Write</p><p class="q">Is your date still open? Tell me about your day.</p></div>
+      <div><p class="k no">Not</p><p class="q no">Submit an inquiry to check vendor availability for your event!!</p></div>
+      <div><p class="k">Write</p><p class="q">The walk down the aisle takes about ninety seconds. Let's choose the music for it together.</p></div>
+      <div><p class="k no">Not</p><p class="q no">We offer a wide range of premium musical packages for every occasion.</p></div>
+      <div><p class="k">Write</p><p class="q">Played for Sara and Tom on Saturday. A moment, held.</p></div>
+      <div><p class="k no">Not</p><p class="q no">Another magical day!! ✨🎻💕 #weddingmusic #violinist #blessed</p></div>
+    </div>
+    <div class="lexicon">
+      <div><p class="label">Words we use</p><ul><li>Held, quiet, warm, chosen</li><li>Ceremony, prelude, processional</li><li>Live, by hand, together</li><li>Golden hour, candlelight, first look</li></ul></div>
+      <div><p class="label">Words we leave out</p><ul class="muted"><li>Magical, stunning, epic</li><li>Packages, vendor, booking solutions</li><li>Vocalist, band, DJ</li><li>Strings For Light</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="band cloud" id="performances">
+  <div class="wrap">
+    <div class="mvt"><span class="no">IX</span><h2>Performances</h2><p class="tempo">Tutti · the identity at work</p></div>
+    <div class="apps">
+      <div class="a" style="grid-column:span 7">
+        <div class="stage-set" style="min-height:420px;background:#D9D1E3">
+          <div class="cards">
+            <div class="card card--f"><svg style="aspect-ratio:1000/1300" class="u" aria-hidden="true"><use href="#sol-arch"/></svg></div>
+            <div class="card card--b">
+              <svg style="aspect-ratio:614/130" class="u w" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+              <div class="ct"><p style="white-space:nowrap">CLAIRE GAXIOLA<br><span style="color:var(--vesper-dk)">VIOLINIST</span></p><p class="r">(770) 500-4731<br>clairegaxiola@stringsoflight18.com<br>@stringsoflight18</p></div>
+            </div>
+          </div>
+        </div>
+        <p><b>Business card.</b>Front: the emblem printed in full colour on night stock. Back: letterpress on 600 gsm cotton, dawn.</p>
+      </div>
+      <div class="a" style="grid-column:span 5">
+        <div class="stage-set" style="min-height:420px;background:#CEC4DA"><div class="env"><div class="flap"></div><div class="sticker"><svg style="aspect-ratio:1000/1300" class="u" aria-hidden="true"><use href="#sol-arch"/></svg></div><p class="to">The Hendersons</p></div></div>
+        <p><b>Thank-you note.</b>Closed with a round emblem sticker. Sent the week after every wedding. (Sample name.)</p>
+      </div>
+      <div class="a" style="grid-column:span 5">
+        <div class="stage-set" style="background:var(--night)">
+          <div class="prog">
+            <svg style="aspect-ratio:1000/1300" class="u e" aria-hidden="true"><use href="#sol-arch"/></svg>
+            <p class="t">Ceremony music</p>
+            <p class="n">Anna &amp; James</p>
+            <ul>
+              <li><i>Prelude</i>Air on the G String · J. S. Bach</li>
+              <li><i>Processional</i>Canon in D · J. Pachelbel</li>
+              <li><i>The bride</i>A Thousand Years · C. Perri</li>
+              <li><i>Recessional</i>Ode to Joy · L. van Beethoven</li>
+            </ul>
+            <svg style="aspect-ratio:614/130" class="u w" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+          </div>
+        </div>
+        <p><b>Programme card.</b>A keepsake left on the seats: her music for their day. (Sample couple and pieces.)</p>
+      </div>
+      <div class="a" style="grid-column:span 7">
+        <div class="stage-set" style="background:#C9BED8">
+          <div class="phone"><div class="scr">
+            <div class="hd"><div class="av"><img src="img/profile.png" alt="" style="width:100%;height:100%"></div><div class="nm"><b>stringsoflight18</b>Strings of Light<br>A moment, held. Live violin for weddings, galas &amp; sacred moments across the Southeast.</div></div>
+            <div class="ig">
+              <div><img src="img/hero.jpg" alt="" loading="lazy"></div>
+              <div class="t1">A moment, held.</div>
+              <div><img src="img/bwhands.jpg" alt="" loading="lazy"></div>
+              <div class="t2">“She plays so beautifully and it was a true joy to work with her.”<small>SARA · BRIDE</small></div>
+              <div><img src="img/hands.jpg" alt="" loading="lazy"></div>
+              <div class="t3"><div><small>WEDDINGS</small><b>Ceremony music from $450.</b></div></div>
+              <div><img src="img/full.jpg" alt="" loading="lazy"></div>
+              <div class="t4"><svg style="aspect-ratio:1000/1300" class="u" aria-hidden="true"><use href="#sol-arch"/></svg></div>
+              <div><img src="img/stage.jpg" alt="" loading="lazy"></div>
+            </div>
+          </div></div>
+        </div>
+        <p><b>Instagram.</b>Photographs carry the grid; one in three tiles is type or the sky. The emblem is the avatar.</p>
+      </div>
+      <div class="a" style="grid-column:span 12">
+        <div class="web">
+          <div class="bar"><i></i><i></i><i></i><span>stringsoflight18.com</span></div>
+          <div class="pg">
+            <div class="l">
+              <nav><svg style="aspect-ratio:614/130" class="u w" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg><span>Weddings · About · Inquire</span></nav>
+              <div class="hx">
+                <p class="e">Claire Gaxiola · Violinist</p>
+                <h3>A moment, held.</h3>
+                <p class="s">Live violin for weddings, galas and sacred moments across the Southeast. Ceremony music from $450.</p>
+                <span class="btn">Is your date open?</span>
+              </div>
+            </div>
+            <div class="r"><img src="img/hero.jpg" alt="" loading="lazy"></div>
+          </div>
+        </div>
+        <p><b>Website.</b>Night and photograph, with the sky rising under the headline. The button asks one human question.</p>
+      </div>
+      <div class="a" style="grid-column:span 12">
+        <div class="stage-set" style="place-items:start center">
+          <div class="sig">
+            <p class="hi">Thank you so much for reaching out. I'd love to hear about your day; here's a link to book a short call whenever suits you.</p>
+            <p class="hi" style="margin-top:12px">Warmly,<br>Claire</p>
+            <div class="blk"><svg style="aspect-ratio:1000/1300" class="u m" aria-hidden="true"><use href="#sol-arch"/></svg><p><b>Claire Gaxiola</b><br>Strings of Light · Violinist<br>(770) 500-4731 · stringsoflight18.com</p></div>
+          </div>
+        </div>
+        <p><b>Email.</b>Written like a note, signed with the emblem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="coda">
+  <div class="wrap">
+    <div class="mvt"><span class="no">Coda</span><h2>The kit</h2><p class="tempo">Fine · every file, ready to use</p></div>
+    <p class="label" style="margin-bottom:16px">Instagram</p>
+    <div class="kitrow kitposts"><img src="img/kit-post-1.jpg" alt="" loading="lazy"><img src="img/kit-post-2.jpg" alt="" loading="lazy"><img src="img/kit-post-3.jpg" alt="" loading="lazy"><img src="img/kit-post-4.jpg" alt="" loading="lazy"><img src="img/kit-post-5.jpg" alt="" loading="lazy"><img src="img/kit-post-6.jpg" alt="" loading="lazy"></div>
+    <div class="kitrow kithl"><img src="img/kit-hl-1.jpg" alt="" loading="lazy"><img src="img/kit-hl-2.jpg" alt="" loading="lazy"><img src="img/kit-hl-3.jpg" alt="" loading="lazy"><img src="img/kit-hl-4.jpg" alt="" loading="lazy"><img src="img/kit-hl-5.jpg" alt="" loading="lazy"><img src="img/kit-hl-6.jpg" alt="" loading="lazy"><img src="img/kit-hl-7.jpg" alt="" loading="lazy"></div>
+    <div class="kitrow kitstories"><img src="img/kit-story-1.jpg" alt="" loading="lazy"><img src="img/kit-story-2.jpg" alt="" loading="lazy"><img src="img/kit-story-3.jpg" alt="" loading="lazy"><img src="img/kit-story-4.jpg" alt="" loading="lazy"></div>
+    <p class="label" style="margin:56px 0 16px">Print</p>
+    <div class="kitprint"><figure><img src="img/kit-bc-1.jpg" alt="" loading="lazy"><figcaption>Business card · front</figcaption></figure><figure><img src="img/kit-bc-2.jpg" alt="" loading="lazy"><figcaption>Business card · back</figcaption></figure><figure><img src="img/kit-thanks-1.jpg" alt="" loading="lazy"><figcaption>Thank-you card</figcaption></figure><figure><img src="img/kit-programme-1.jpg" alt="" loading="lazy"><figcaption>Ceremony programme</figcaption></figure><figure><img src="img/kit-services-1.jpg" alt="" loading="lazy"><figcaption>Services one-sheet</figcaption></figure><figure><img src="img/kit-letterhead-1.jpg" alt="" loading="lazy"><figcaption>Letterhead</figcaption></figure><figure><img src="img/kit-sticker-1.jpg" alt="" loading="lazy"><figcaption>Sticker</figcaption></figure></div>
+    <p class="label" style="margin:56px 0 16px">Downloads</p>
+    <p class="muted" style="font-size:16px;margin-bottom:18px">Download everything at once, or one section at a time.</p>
+    <div class="dls"><div class="dl dl--all"><div><b>Everything</b><p>The complete kit: every folder below in one zip.</p></div><div class="dl__f"><span>61.9 MB</span><a class="dlb" href="downloads/Strings-of-Light-Brand-Kit.zip" download>Download</a></div></div><div class="dl"><div><b>Start here</b><p>Which file to use for what, on one page.</p></div><div class="dl__f"><span>0.1 MB</span><a class="dlb" href="downloads/00_START-HERE.pdf" download>Download</a></div></div><div class="dl"><div><b>Brand guidelines</b><p>26-page guidelines PDF: the idea, logo rules, colour, type, photography, voice.</p></div><div class="dl__f"><span>8.7 MB</span><a class="dlb" href="downloads/Strings-of-Light_Brand-Guidelines.pdf" download>Download</a></div></div><div class="dl"><div><b>Profile picture</b><p>Ready to upload to Instagram, Facebook and Google.</p></div><div class="dl__f"><span>0.2 MB</span><a class="dlb" href="downloads/SOL_Profile-Picture_1080.png" download>Download</a></div></div><div class="dl"><div><b>Logos</b><p>Five lockups in eight colourways: SVG, PDF and transparent PNG.</p></div><div class="dl__f"><span>18.2 MB</span><a class="dlb" href="downloads/Strings-of-Light_Logos.zip" download>Download</a></div></div><div class="dl"><div><b>Colour</b><p>Adobe swatches (ASE), CSS, JSON and the colour guide.</p></div><div class="dl__f"><span>0.1 MB</span><a class="dlb" href="downloads/Strings-of-Light_Color.zip" download>Download</a></div></div><div class="dl"><div><b>Typography</b><p>EB Garamond and Pinyon Script with their free licences.</p></div><div class="dl__f"><span>0.3 MB</span><a class="dlb" href="downloads/Strings-of-Light_Typography.zip" download>Download</a></div></div><div class="dl"><div><b>Social media</b><p>Profile picture, highlight covers, six posts, stories, reel and Facebook covers.</p></div><div class="dl__f"><span>9.3 MB</span><a class="dlb" href="downloads/Strings-of-Light_Social-Media.zip" download>Download</a></div></div><div class="dl"><div><b>Print</b><p>Business card, thank-you card, programme, sticker, letterhead, services sheet, with bleed.</p></div><div class="dl__f"><span>0.6 MB</span><a class="dlb" href="downloads/Strings-of-Light_Print.zip" download>Download</a></div></div><div class="dl"><div><b>Digital</b><p>Favicons, link preview, email signature, wallpapers, video-call background.</p></div><div class="dl__f"><span>3.4 MB</span><a class="dlb" href="downloads/Strings-of-Light_Digital.zip" download>Download</a></div></div><div class="dl"><div><b>Motion</b><p>The logo animation for reels, stories and feed.</p></div><div class="dl__f"><span>0.4 MB</span><a class="dlb" href="downloads/Strings-of-Light_Motion.zip" download>Download</a></div></div><div class="dl"><div><b>Photography</b><p>The selects at full resolution and web size, with credits.</p></div><div class="dl__f"><span>21.6 MB</span><a class="dlb" href="downloads/Strings-of-Light_Photography.zip" download>Download</a></div></div></div>
+    <div class="colophon">
+      <svg class="u w" style="aspect-ratio:614/130" role="img" aria-label="Strings of Light"><use href="#sol-word"/></svg>
+      <p>clairegaxiola@stringsoflight18.com · (770) 500-4731 · @stringsoflight18<br>Photography: Neville Simpson (lamplight), others to be credited.</p>
+    </div>
+  </div>
+</section>
+
+</body></html>
